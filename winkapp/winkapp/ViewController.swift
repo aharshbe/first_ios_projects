@@ -81,9 +81,43 @@ class ViewController: UIViewController {
     }
     
     @IBAction func person1namechange(_ sender: Any) {
+        
+            //1. Create the alert controller.
+            let alert = UIAlertController(title: "Hello...", message: "Enter name to change to", preferredStyle: .alert)
+            
+            //2. Add the text field. You can configure it however you need.
+            alert.addTextField { (textField) in
+                textField.placeholder = "enter name here"
             }
+        
+            
+            // 3. Grab the value from the text field, and print it when the user clicks OK.
+            alert.addAction(UIAlertAction(title: "Change", style: .default, handler: { [weak alert] (_) in
+                let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+                self.person1.text = textField?.text!
+            }))
+            
+            // 4. Present the alert.
+            self.present(alert, animated: true, completion: nil)
+    }
     
     @IBAction func person2namechange(_ sender: Any) {
+        //1. Create the alert controller.
+        let alert = UIAlertController(title: "Hello...", message: "Enter name to change to", preferredStyle: .alert)
+        
+        //2. Add the text field. You can configure it however you need.
+        alert.addTextField { (textField) in
+            textField.placeholder = "enter name here"
+        }
+        
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "Change", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            self.person2.text = textField?.text!
+        }))
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
