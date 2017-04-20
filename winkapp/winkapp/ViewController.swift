@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var person2incrementorview: UILabel!
     
-    var incrementorp1 = 0
-    var incrementorp2 = 0
+    var incrementorp1 = 1
+    var incrementorp2 = 1
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,18 +33,29 @@ class ViewController: UIViewController {
 
     @IBAction func person1increment(_ sender: Any) {
     
-        let str = String(incrementorp1)
+        let strIn1 = String(incrementorp1)
         incrementorp1 = incrementorp1 + 1
-        person1incrementorview.text = str
+        person1incrementorview.text = strIn1
     }
 
     @IBAction func person2increment(_ sender: Any) {
+        
+        let strIn2 = String(incrementorp2)
+        incrementorp2 = incrementorp2 + 1
+        person2incrementorview.text = strIn2
+        
     }
     
     @IBAction func person1reset(_ sender: Any) {
+        incrementorp1 = 1
+        let strIn1reset = String(0)
+        person1incrementorview.text = strIn1reset
     }
     
     @IBAction func person2reset(_ sender: Any) {
+        incrementorp2 = 1
+        let strIn2reset = String(0)
+        person2incrementorview.text = strIn2reset
     }
     
     @IBAction func person1namechange(_ sender: Any) {
