@@ -26,7 +26,6 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         let preferences = UserDefaults.standard
-        
         let currentLevelKey = "currentLevel"
         if preferences.object(forKey: currentLevelKey) == nil {
             //  Doesn't exist
@@ -34,6 +33,15 @@ class ViewController: UIViewController {
             let currentLevel = preferences.integer(forKey: currentLevelKey)
             let strIn1sharedprefs = String(currentLevel)
             person1incrementorview.text = strIn1sharedprefs
+        }
+        let preferences2 = UserDefaults.standard
+        let currentLevelKey2 = "currentLevel2"
+        if preferences2.object(forKey: currentLevelKey2) == nil {
+            //  Doesn't exist
+        } else {
+            let currentLevel2 = preferences2.integer(forKey: currentLevelKey2)
+            let strIn2sharedprefs = String(currentLevel2)
+            person2incrementorview.text = strIn2sharedprefs
         }
     }
 
@@ -48,7 +56,6 @@ class ViewController: UIViewController {
         incrementorp1 = incrementorp1 + 1
         person1incrementorview.text = strIn1
         let preferences = UserDefaults.standard
-        
         let currentLevel = incrementorp1
         let currentLevelKey = "currentLevel"
         preferences.set(currentLevel, forKey: currentLevelKey)
@@ -60,6 +67,11 @@ class ViewController: UIViewController {
         let strIn2 = String(incrementorp2)
         incrementorp2 = incrementorp2 + 1
         person2incrementorview.text = strIn2
+        let preferences2 = UserDefaults.standard
+        let currentLevel2 = incrementorp2
+        let currentLevelKey2 = "currentLevel2"
+        preferences2.set(currentLevel2, forKey: currentLevelKey2)
+        preferences2.synchronize()
         
     }
     
