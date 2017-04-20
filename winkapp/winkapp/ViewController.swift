@@ -50,16 +50,38 @@ class ViewController: UIViewController {
         incrementorp1 = 1
         let strIn1reset = String(0)
         person1incrementorview.text = strIn1reset
+        let alert = UIAlertController(title: "Hello...", message: "Person 1 winks reset!", preferredStyle: UIAlertControllerStyle.alert)
+        let alertAction = UIAlertAction(title: "Sounds good", style: UIAlertActionStyle.default)
+        {
+            (UIAlertAction) -> Void in
+        }
+        alert.addAction(alertAction)
+        present(alert, animated: true)
+        {
+            () -> Void in
+        }
+
     }
     
     @IBAction func person2reset(_ sender: Any) {
         incrementorp2 = 1
         let strIn2reset = String(0)
         person2incrementorview.text = strIn2reset
+        let alert = UIAlertController(title: "Hello...", message: "Person 2 winks reset!", preferredStyle: UIAlertControllerStyle.alert)
+        let alertAction = UIAlertAction(title: "Sounds good", style: UIAlertActionStyle.default)
+        {
+            (UIAlertAction) -> Void in
+        }
+        alert.addAction(alertAction)
+        present(alert, animated: true)
+        {
+            () -> Void in
+        }
+
     }
     
     @IBAction func person1namechange(_ sender: Any) {
-    }
+            }
     
     @IBAction func person2namechange(_ sender: Any) {
     }
