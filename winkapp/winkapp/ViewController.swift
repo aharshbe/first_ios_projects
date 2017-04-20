@@ -24,6 +24,17 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let preferences = UserDefaults.standard
+        
+        let currentLevelKey = "currentLevel"
+        if preferences.object(forKey: currentLevelKey) == nil {
+            //  Doesn't exist
+        } else {
+            let currentLevel = preferences.integer(forKey: currentLevelKey)
+            let strIn1sharedprefs = String(currentLevel)
+            person1incrementorview.text = strIn1sharedprefs
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -36,6 +47,12 @@ class ViewController: UIViewController {
         let strIn1 = String(incrementorp1)
         incrementorp1 = incrementorp1 + 1
         person1incrementorview.text = strIn1
+        let preferences = UserDefaults.standard
+        
+        let currentLevel = incrementorp1
+        let currentLevelKey = "currentLevel"
+        preferences.set(currentLevel, forKey: currentLevelKey)
+        preferences.synchronize()
     }
 
     @IBAction func person2increment(_ sender: Any) {
