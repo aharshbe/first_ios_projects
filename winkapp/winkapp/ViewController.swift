@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             let currentLevel = preferences.integer(forKey: currentLevelKey)
             let strIn1sharedprefs = String(currentLevel)
             person1incrementorview.text = strIn1sharedprefs
+            incrementorp1 = currentLevel
         }
         //pref 2 (incrementor person 2)
         let preferences2 = UserDefaults.standard
@@ -44,6 +45,9 @@ class ViewController: UIViewController {
             let currentLevel2 = preferences2.integer(forKey: currentLevelKey2)
             let strIn2sharedprefs = String(currentLevel2)
             person2incrementorview.text = strIn2sharedprefs
+            incrementorp2 = currentLevel2
+            
+           
         }
         //pref 3 (person 1 name)
         
@@ -67,8 +71,8 @@ class ViewController: UIViewController {
 
     @IBAction func person1increment(_ sender: Any) {
     
-        let strIn1 = String(incrementorp1)
         incrementorp1 = incrementorp1 + 1
+        let strIn1 = String(incrementorp1)
         person1incrementorview.text = strIn1
         let preferences = UserDefaults.standard
         let currentLevel = incrementorp1
@@ -79,8 +83,8 @@ class ViewController: UIViewController {
 
     @IBAction func person2increment(_ sender: Any) {
         
-        let strIn2 = String(incrementorp2)
         incrementorp2 = incrementorp2 + 1
+        let strIn2 = String(incrementorp2)
         person2incrementorview.text = strIn2
         let preferences2 = UserDefaults.standard
         let currentLevel2 = incrementorp2
@@ -91,8 +95,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func person1reset(_ sender: Any) {
-        incrementorp1 = 1
+        incrementorp1 = 0
         let strIn1reset = String(0)
+        let preferences = UserDefaults.standard
+        let currentLevel = incrementorp1
+        let currentLevelKey = "currentLevel"
+        preferences.set(currentLevel, forKey: currentLevelKey)
+        preferences.synchronize()
+
         person1incrementorview.text = strIn1reset
         let alert = UIAlertController(title: "Hello...", message: "Person 1 winks reset!", preferredStyle: UIAlertControllerStyle.alert)
         let alertAction = UIAlertAction(title: "Sounds good", style: UIAlertActionStyle.default)
@@ -108,8 +118,14 @@ class ViewController: UIViewController {
     }
     
     @IBAction func person2reset(_ sender: Any) {
-        incrementorp2 = 1
+        incrementorp2 = 0
         let strIn2reset = String(0)
+        let preferences2 = UserDefaults.standard
+        let currentLevel2 = incrementorp2
+        let currentLevelKey2 = "currentLevel2"
+        preferences2.set(currentLevel2, forKey: currentLevelKey2)
+        preferences2.synchronize()
+        
         person2incrementorview.text = strIn2reset
         let alert = UIAlertController(title: "Hello...", message: "Person 2 winks reset!", preferredStyle: UIAlertControllerStyle.alert)
         let alertAction = UIAlertAction(title: "Sounds good", style: UIAlertActionStyle.default)
