@@ -49,6 +49,19 @@ class InterfaceController: WKInterfaceController {
             
             
         }
+        //pref 3 (person 1 name)
+        
+        let userName = UserDefaults.standard.string(forKey: "username")
+        person1.setText(userName)
+        if person1.isEqual(""){
+            person1.setText("Person 1")
+        }
+          //pref 3 (person 1 name)
+        let userName2 = UserDefaults.standard.string(forKey: "username2")
+        person2.setText(userName2)
+        if person2.isEqual(""){
+            person2.setText("Person 2")
+        }
 
 
     }
@@ -69,6 +82,7 @@ class InterfaceController: WKInterfaceController {
                                                        completion:{(results) -> Void in
                                                         let aResult = results?[0] as? String
                                                         self.person1.setText(aResult)
+                                                         UserDefaults.standard.set(aResult, forKey: "username")
         })
     }
     
@@ -77,6 +91,7 @@ class InterfaceController: WKInterfaceController {
                                         completion:{(results) -> Void in
                                             let aResult = results?[0] as? String
                                             self.person2.setText(aResult)
+                                            UserDefaults.standard.set(aResult, forKey: "username2")
         })
     }
     
