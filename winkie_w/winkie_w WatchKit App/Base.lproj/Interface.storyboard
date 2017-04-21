@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch42" orientation="portrait">
+    <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -12,14 +12,24 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="winkie_w_WatchKit_App" customModuleProvider="target">
+                <controller animationDuration="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="winkie_w_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="49" alignment="left" title="+" id="mZo-gB-Ll0">
+                        <imageView width="56" height="56" alignment="center" image="Image" animationDuration="2" id="DlT-bP-N3W">
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer id="aZb-Zj-lyg">
+                                    <connections>
+                                        <action selector="resetrest:" destination="AgC-eL-Hgc" id="eol-7Y-mwX"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
+                        </imageView>
+                        <button width="46" height="45" alignment="left" backgroundImage="plus" id="mZo-gB-Ll0">
+                            <color key="backgroundColor" red="0.17522710499999999" green="0.28621888290000003" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="person1incrementoradd" destination="AgC-eL-Hgc" id="lUa-5u-JiI"/>
                             </connections>
                         </button>
-                        <label alignment="left" text="Person 1" id="ooL-IH-gNY">
+                        <label alignment="center" text="Person 1" id="ooL-IH-gNY">
                             <gestureRecognizers>
                                 <longPressGestureRecognizer id="1RO-O8-q5a">
                                     <connections>
@@ -27,8 +37,9 @@
                                     </connections>
                                 </longPressGestureRecognizer>
                             </gestureRecognizers>
+                            <color key="textColor" red="0.48560634689999999" green="0.6242473503" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </label>
-                        <label alignment="left" text="0" id="aBo-72-gfK">
+                        <label alignment="center" text="0" id="aBo-72-gfK">
                             <gestureRecognizers>
                                 <longPressGestureRecognizer id="wfU-wO-bta">
                                     <connections>
@@ -36,19 +47,23 @@
                                     </connections>
                                 </longPressGestureRecognizer>
                             </gestureRecognizers>
+                            <color key="textColor" red="0.7159519026068949" green="0.46285716275477218" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </label>
-                        <button width="49" alignment="left" title="-" id="EmY-4M-xu8">
+                        <button width="46" height="44" alignment="right" backgroundImage="minus" id="EmY-4M-xu8">
+                            <color key="backgroundColor" red="0.17522710499999999" green="0.28621888290000003" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="person1deincrementorminus" destination="AgC-eL-Hgc" id="HCY-bj-fpj"/>
                             </connections>
                         </button>
-                        <separator alignment="left" id="V8z-cr-NB4"/>
-                        <button width="49" alignment="left" title="+" id="Cs5-BI-L4A">
+                        <separator alignment="left" id="I0s-BY-pAr">
+                            <color key="color" red="0.71595190259999997" green="0.4628571628" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
+                        <button width="47" height="45" alignment="left" backgroundImage="plus" id="Cs5-BI-L4A">
                             <connections>
                                 <action selector="person2incrementorplus" destination="AgC-eL-Hgc" id="dCO-LM-UYO"/>
                             </connections>
                         </button>
-                        <label alignment="left" text="Person 2" id="xOp-uv-U7p">
+                        <label alignment="center" text="Person 2" id="xOp-uv-U7p">
                             <gestureRecognizers>
                                 <longPressGestureRecognizer id="2eP-ST-prm">
                                     <connections>
@@ -56,8 +71,9 @@
                                     </connections>
                                 </longPressGestureRecognizer>
                             </gestureRecognizers>
+                            <color key="textColor" red="0.48560634694576693" green="0.62424735032725642" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </label>
-                        <label alignment="left" text="0" id="g6v-B5-O6T">
+                        <label alignment="center" text="0" id="g6v-B5-O6T">
                             <gestureRecognizers>
                                 <longPressGestureRecognizer id="HNo-Qb-SCK">
                                     <connections>
@@ -65,8 +81,9 @@
                                     </connections>
                                 </longPressGestureRecognizer>
                             </gestureRecognizers>
+                            <color key="textColor" red="0.71595190259999997" green="0.4628571628" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </label>
-                        <button width="49" alignment="left" title="-" id="Lrc-H9-dH0">
+                        <button width="47" height="47" alignment="right" backgroundImage="minus" id="Lrc-H9-dH0">
                             <connections>
                                 <action selector="person2deincrementorminus" destination="AgC-eL-Hgc" id="Nid-M7-7OJ"/>
                             </connections>
@@ -80,7 +97,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219" y="115"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

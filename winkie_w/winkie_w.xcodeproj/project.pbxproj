@@ -10,7 +10,6 @@
 		6EEC11AD1EA9E1F9002E892B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC11AC1EA9E1F9002E892B /* AppDelegate.swift */; };
 		6EEC11AF1EA9E1F9002E892B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC11AE1EA9E1F9002E892B /* ViewController.swift */; };
 		6EEC11B21EA9E1F9002E892B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEC11B01EA9E1F9002E892B /* Main.storyboard */; };
-		6EEC11B41EA9E1F9002E892B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EEC11B31EA9E1F9002E892B /* Assets.xcassets */; };
 		6EEC11B71EA9E1F9002E892B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEC11B51EA9E1F9002E892B /* LaunchScreen.storyboard */; };
 		6EEC11C21EA9E1F9002E892B /* winkie_wTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC11C11EA9E1F9002E892B /* winkie_wTests.swift */; };
 		6EEC11CD1EA9E1FA002E892B /* winkie_wUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC11CC1EA9E1FA002E892B /* winkie_wUITests.swift */; };
@@ -85,7 +84,6 @@
 		6EEC11AC1EA9E1F9002E892B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EEC11AE1EA9E1F9002E892B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6EEC11B11EA9E1F9002E892B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6EEC11B31EA9E1F9002E892B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EEC11B61EA9E1F9002E892B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6EEC11B81EA9E1F9002E892B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6EEC11BD1EA9E1F9002E892B /* winkie_wTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = winkie_wTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,7 +167,6 @@
 				6EEC11AC1EA9E1F9002E892B /* AppDelegate.swift */,
 				6EEC11AE1EA9E1F9002E892B /* ViewController.swift */,
 				6EEC11B01EA9E1F9002E892B /* Main.storyboard */,
-				6EEC11B31EA9E1F9002E892B /* Assets.xcassets */,
 				6EEC11B51EA9E1F9002E892B /* LaunchScreen.storyboard */,
 				6EEC11B81EA9E1F9002E892B /* Info.plist */,
 			);
@@ -384,7 +381,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EEC11B71EA9E1F9002E892B /* LaunchScreen.storyboard in Resources */,
-				6EEC11B41EA9E1F9002E892B /* Assets.xcassets in Resources */,
 				6EEC11B21EA9E1F9002E892B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -779,6 +775,7 @@
 				6EEC11F41EA9E1FA002E892B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EEC11F61EA9E1FA002E892B /* Build configuration list for PBXNativeTarget "winkie_w WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -787,6 +784,7 @@
 				6EEC11F81EA9E1FA002E892B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EEC11FA1EA9E1FA002E892B /* Build configuration list for PBXNativeTarget "winkie_w" */ = {
 			isa = XCConfigurationList;
@@ -795,6 +793,7 @@
 				6EEC11FC1EA9E1FA002E892B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EEC11FD1EA9E1FA002E892B /* Build configuration list for PBXNativeTarget "winkie_wTests" */ = {
 			isa = XCConfigurationList;
@@ -803,6 +802,7 @@
 				6EEC11FF1EA9E1FA002E892B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EEC12001EA9E1FA002E892B /* Build configuration list for PBXNativeTarget "winkie_wUITests" */ = {
 			isa = XCConfigurationList;
@@ -811,6 +811,7 @@
 				6EEC12021EA9E1FA002E892B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
