@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F97B992F1F13C4775DF5990 /* Pods_winkappUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFEF1DAE6EC95C41CA0BE266 /* Pods_winkappUITests.framework */; };
 		6E9CD4FC1EA937CA00458ADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CD4FB1EA937CA00458ADD /* AppDelegate.swift */; };
 		6E9CD4FE1EA937CA00458ADD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CD4FD1EA937CA00458ADD /* ViewController.swift */; };
 		6E9CD5011EA937CA00458ADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9CD4FF1EA937CA00458ADD /* Main.storyboard */; };
@@ -14,6 +15,7 @@
 		6E9CD5061EA937CA00458ADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E9CD5041EA937CA00458ADD /* LaunchScreen.storyboard */; };
 		6E9CD5111EA937CA00458ADD /* winkappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CD5101EA937CA00458ADD /* winkappTests.swift */; };
 		6E9CD51C1EA937CA00458ADD /* winkappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9CD51B1EA937CA00458ADD /* winkappUITests.swift */; };
+		DD76BB0846AB5A91E15B43E0 /* Pods_winkappTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BB46FE580F16AD68FED4A1 /* Pods_winkappTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +36,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		106757696580FDCF95A79EA4 /* Pods-winkappUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winkappUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-winkappUITests/Pods-winkappUITests.release.xcconfig"; sourceTree = "<group>"; };
+		13E392B5C6EF2AC01C378C2C /* Pods-winkappUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winkappUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-winkappUITests/Pods-winkappUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1FAE9A41B1E09D12975089D6 /* Pods-winkappTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winkappTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-winkappTests/Pods-winkappTests.release.xcconfig"; sourceTree = "<group>"; };
+		2055655D921A32C359007DA8 /* Pods_winkapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_winkapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5327EFBD2505A8C5ED55BB88 /* Pods-winkapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winkapp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-winkapp/Pods-winkapp.debug.xcconfig"; sourceTree = "<group>"; };
+		66BB46FE580F16AD68FED4A1 /* Pods_winkappTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_winkappTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9CD4F81EA937CA00458ADD /* winkapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winkapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9CD4FB1EA937CA00458ADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E9CD4FD1EA937CA00458ADD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,9 @@
 		6E9CD5171EA937CA00458ADD /* winkappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = winkappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E9CD51B1EA937CA00458ADD /* winkappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = winkappUITests.swift; sourceTree = "<group>"; };
 		6E9CD51D1EA937CA00458ADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70F57AB24D20DC5834902232 /* Pods-winkappTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winkappTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-winkappTests/Pods-winkappTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8EC56AABE1D817575E882FCC /* Pods-winkapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-winkapp.release.xcconfig"; path = "Pods/Target Support Files/Pods-winkapp/Pods-winkapp.release.xcconfig"; sourceTree = "<group>"; };
+		CFEF1DAE6EC95C41CA0BE266 /* Pods_winkappUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_winkappUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD76BB0846AB5A91E15B43E0 /* Pods_winkappTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F97B992F1F13C4775DF5990 /* Pods_winkappUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,8 @@
 				6E9CD50F1EA937CA00458ADD /* winkappTests */,
 				6E9CD51A1EA937CA00458ADD /* winkappUITests */,
 				6E9CD4F91EA937CA00458ADD /* Products */,
+				D45C355F1C5C8A0D2FEFD19E /* Pods */,
+				F745B588BE74017FB9668CDE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +140,29 @@
 			path = winkappUITests;
 			sourceTree = "<group>";
 		};
+		D45C355F1C5C8A0D2FEFD19E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5327EFBD2505A8C5ED55BB88 /* Pods-winkapp.debug.xcconfig */,
+				8EC56AABE1D817575E882FCC /* Pods-winkapp.release.xcconfig */,
+				70F57AB24D20DC5834902232 /* Pods-winkappTests.debug.xcconfig */,
+				1FAE9A41B1E09D12975089D6 /* Pods-winkappTests.release.xcconfig */,
+				13E392B5C6EF2AC01C378C2C /* Pods-winkappUITests.debug.xcconfig */,
+				106757696580FDCF95A79EA4 /* Pods-winkappUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F745B588BE74017FB9668CDE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2055655D921A32C359007DA8 /* Pods_winkapp.framework */,
+				66BB46FE580F16AD68FED4A1 /* Pods_winkappTests.framework */,
+				CFEF1DAE6EC95C41CA0BE266 /* Pods_winkappUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E9CD5201EA937CA00458ADD /* Build configuration list for PBXNativeTarget "winkapp" */;
 			buildPhases = (
+				7C1E861AC343A87665B80D7C /* [CP] Check Pods Manifest.lock */,
 				6E9CD4F41EA937CA00458ADD /* Sources */,
 				6E9CD4F51EA937CA00458ADD /* Frameworks */,
 				6E9CD4F61EA937CA00458ADD /* Resources */,
+				1D82554C60E6C084B72E4573 /* [CP] Embed Pods Frameworks */,
+				644FB2BB8CB4C2BB6915ED6E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E9CD5231EA937CA00458ADD /* Build configuration list for PBXNativeTarget "winkappTests" */;
 			buildPhases = (
+				A53F4B0FED8E826C6291C12C /* [CP] Check Pods Manifest.lock */,
 				6E9CD5081EA937CA00458ADD /* Sources */,
 				6E9CD5091EA937CA00458ADD /* Frameworks */,
 				6E9CD50A1EA937CA00458ADD /* Resources */,
+				193B52199E589EEE3B88958C /* [CP] Embed Pods Frameworks */,
+				35B8A22DC6CE5A294722D9AA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +211,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6E9CD5261EA937CA00458ADD /* Build configuration list for PBXNativeTarget "winkappUITests" */;
 			buildPhases = (
+				4940523D7E86A6BE4113282F /* [CP] Check Pods Manifest.lock */,
 				6E9CD5131EA937CA00458ADD /* Sources */,
 				6E9CD5141EA937CA00458ADD /* Frameworks */,
 				6E9CD5151EA937CA00458ADD /* Resources */,
+				834E975BDC551CF60CE50414 /* [CP] Embed Pods Frameworks */,
+				36AF1544EE798EBF796141BE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +303,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		193B52199E589EEE3B88958C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-winkappTests/Pods-winkappTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D82554C60E6C084B72E4573 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-winkapp/Pods-winkapp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		35B8A22DC6CE5A294722D9AA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-winkappTests/Pods-winkappTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36AF1544EE798EBF796141BE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-winkappUITests/Pods-winkappUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4940523D7E86A6BE4113282F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		644FB2BB8CB4C2BB6915ED6E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-winkapp/Pods-winkapp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C1E861AC343A87665B80D7C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		834E975BDC551CF60CE50414 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-winkappUITests/Pods-winkappUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A53F4B0FED8E826C6291C12C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6E9CD4F41EA937CA00458ADD /* Sources */ = {
@@ -415,6 +600,7 @@
 		};
 		6E9CD5211EA937CA00458ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5327EFBD2505A8C5ED55BB88 /* Pods-winkapp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F869869292;
@@ -428,6 +614,7 @@
 		};
 		6E9CD5221EA937CA00458ADD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC56AABE1D817575E882FCC /* Pods-winkapp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = F869869292;
@@ -441,6 +628,7 @@
 		};
 		6E9CD5241EA937CA00458ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70F57AB24D20DC5834902232 /* Pods-winkappTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +644,7 @@
 		};
 		6E9CD5251EA937CA00458ADD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FAE9A41B1E09D12975089D6 /* Pods-winkappTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +660,7 @@
 		};
 		6E9CD5271EA937CA00458ADD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13E392B5C6EF2AC01C378C2C /* Pods-winkappUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F869869292;
@@ -485,6 +675,7 @@
 		};
 		6E9CD5281EA937CA00458ADD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 106757696580FDCF95A79EA4 /* Pods-winkappUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = F869869292;
@@ -516,6 +707,7 @@
 				6E9CD5221EA937CA00458ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E9CD5231EA937CA00458ADD /* Build configuration list for PBXNativeTarget "winkappTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +716,7 @@
 				6E9CD5251EA937CA00458ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6E9CD5261EA937CA00458ADD /* Build configuration list for PBXNativeTarget "winkappUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +725,7 @@
 				6E9CD5281EA937CA00458ADD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

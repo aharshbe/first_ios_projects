@@ -1,0 +1,6 @@
+framework module Pods_winkapp {
+  umbrella header "Pods-winkapp-umbrella.h"
+
+  export *
+  module * { export * }
+}
