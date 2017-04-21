@@ -69,4 +69,17 @@ class InterfaceController: WKInterfaceController {
         person2.setText("Bryan")
     }
     
+    
+    @IBAction func longpressp1incrementor(_ sender: Any) {
+        incrementor1 = 0
+       let stringperson1incrementor = String(incrementor1)
+        person1incrementorview.setText(stringperson1incrementor)
+    }
+    
+    @IBAction func longpressp2incrementor(_ sender: Any) {
+        incrementor2 = 0
+        let stringperson2incrementor = String(incrementor2)
+        person1incrementorview.setText(stringperson2incrementor)
+    }
+    
 }

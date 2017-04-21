@@ -30,7 +30,11 @@
                         </label>
                         <label alignment="left" text="0" id="aBo-72-gfK">
                             <gestureRecognizers>
-                                <longPressGestureRecognizer id="wfU-wO-bta"/>
+                                <longPressGestureRecognizer id="wfU-wO-bta">
+                                    <connections>
+                                        <action selector="longpressp1incrementor:" destination="AgC-eL-Hgc" id="Pq6-CW-1FV"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
                             </gestureRecognizers>
                         </label>
                         <button width="49" alignment="left" title="-" id="EmY-4M-xu8">
@@ -55,7 +59,11 @@
                         </label>
                         <label alignment="left" text="0" id="g6v-B5-O6T">
                             <gestureRecognizers>
-                                <longPressGestureRecognizer id="HNo-Qb-SCK"/>
+                                <longPressGestureRecognizer id="HNo-Qb-SCK">
+                                    <connections>
+                                        <action selector="longpressp2incrementor:" destination="AgC-eL-Hgc" id="gP6-a9-wZb"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
                             </gestureRecognizers>
                         </label>
                         <button width="49" alignment="left" title="-" id="Lrc-H9-dH0">
