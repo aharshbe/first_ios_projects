@@ -225,6 +225,11 @@ class ViewController: UIViewController {
     
     
     
+    @IBAction func movingtonext(_ sender: UIButton) {
+        
+
+
+    }
     
     
 }
