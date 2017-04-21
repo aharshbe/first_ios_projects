@@ -97,7 +97,7 @@ class ViewController: UIViewController {
     @IBAction func person1reset(_ sender: Any) {
       
         
-        let alert = UIAlertController(title: "Hello...", message: "Are you sure you want to reset \(person1.text!) winks?", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Hello...", message: "Are you sure you want to reset \(person1.text!)'s winks?", preferredStyle: UIAlertControllerStyle.alert)
         let alertAction = UIAlertAction(title: "Cancel", style: .cancel)
         {
             (UIAlertAction) -> Void in
@@ -123,7 +123,7 @@ class ViewController: UIViewController {
     
     @IBAction func person2reset(_ sender: Any) {
         
-        let alert = UIAlertController(title: "Hello...", message: "Are you sure you want to reset \(person2.text!) winks?", preferredStyle: UIAlertControllerStyle.alert)
+        let alert = UIAlertController(title: "Hello...", message: "Are you sure you want to reset \(person2.text!)'s winks?", preferredStyle: UIAlertControllerStyle.alert)
         let alertAction = UIAlertAction(title: "Cancel", style: .cancel)
         {
             (UIAlertAction) -> Void in
@@ -150,7 +150,7 @@ class ViewController: UIViewController {
     @IBAction func person1namechange(_ sender: Any) {
         
             //1. Create the alert controller.
-            let alert = UIAlertController(title: "Hello...", message: "Enter name to change to", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Hello...", message: "Are you sure you'd like to change the player 1's name?", preferredStyle: .alert)
             
             //2. Add the text field. You can configure it however you need.
             alert.addTextField { (textField) in
@@ -165,6 +165,9 @@ class ViewController: UIViewController {
                 UserDefaults.standard.set(textField?.text!, forKey: "username")
 
             }))
+            alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
+                
+            }))
         
             // 4. Present the alert.
             self.present(alert, animated: true, completion: nil)
@@ -172,7 +175,7 @@ class ViewController: UIViewController {
     
     @IBAction func person2namechange(_ sender: Any) {
         //1. Create the alert controller.
-        let alert = UIAlertController(title: "Hello...", message: "Enter name to change to", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Hello...", message: "Are you sure you'd like to change player 2's name?", preferredStyle: .alert)
         
         //2. Add the text field. You can configure it however you need.
         alert.addTextField { (textField) in
@@ -184,7 +187,11 @@ class ViewController: UIViewController {
             let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
             self.person2.text = textField?.text!
             UserDefaults.standard.set(textField?.text!, forKey: "username2")
+        
             
+        }))
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
             
         }))
         
