@@ -25,8 +25,32 @@ class InterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
         
-        let person1incrememntor = String(incrementor1)
-        person1incrementorview.setText(person1incrememntor)
+        
+        
+        //pref 1 (incrementor incrementor person 1)
+        let preferences = UserDefaults.standard
+        let currentLevelKey = "currentLevel"
+        if preferences.object(forKey: currentLevelKey) == nil {
+            //  Doesn't exist
+        } else {
+            let currentLevel = preferences.integer(forKey: currentLevelKey)
+            let strIn1sharedprefs = String(currentLevel)
+            person1incrementorview.setText(strIn1sharedprefs)
+        }
+        //pref 2 (incrementor person 2)
+        let preferences2 = UserDefaults.standard
+        let currentLevelKey2 = "currentLevel2"
+        if preferences2.object(forKey: currentLevelKey2) == nil {
+            //  Doesn't exist
+        } else {
+            let currentLevel2 = preferences2.integer(forKey: currentLevelKey2)
+            let strIn2sharedprefs = String(currentLevel2)
+            person2incrementorview.setText(strIn2sharedprefs)
+            
+            
+        }
+
+
     }
     
     override func willActivate() {
@@ -51,23 +75,44 @@ class InterfaceController: WKInterfaceController {
         incrementor1 = incrementor1 + 1
         let stringperson1incrementor = String(incrementor1)
         person1incrementorview.setText(stringperson1incrementor)
+        let preferences = UserDefaults.standard
+        let currentLevel = incrementor1
+        let currentLevelKey = "currentLevel"
+        preferences.set(currentLevel, forKey: currentLevelKey)
+        preferences.synchronize()
+
     }
     @IBAction func person1deincrementorminus() {
         incrementor1 = incrementor1 - 1
         let stringperson1incrementor = String(incrementor1)
         person1incrementorview.setText(stringperson1incrementor)
+        let preferences = UserDefaults.standard
+        let currentLevel = incrementor1
+        let currentLevelKey = "currentLevel"
+        preferences.set(currentLevel, forKey: currentLevelKey)
+        preferences.synchronize()
     }
     
     @IBAction func person2incrementorplus() {
         incrementor2 = incrementor2 + 1
         let stringperson2incrementor = String(incrementor2)
         person2incrementorview.setText(stringperson2incrementor)
+        let preferences2 = UserDefaults.standard
+        let currentLevel2 = incrementor2
+        let currentLevelKey2 = "currentLevel2"
+        preferences2.set(currentLevel2, forKey: currentLevelKey2)
+        preferences2.synchronize()
     }
     
     @IBAction func person2deincrementorminus() {
         incrementor2 = incrementor2 - 1
         let stringperson2incrementor = String(incrementor2)
         person2incrementorview.setText(stringperson2incrementor)
+        let preferences2 = UserDefaults.standard
+        let currentLevel2 = incrementor2
+        let currentLevelKey2 = "currentLevel2"
+        preferences2.set(currentLevel2, forKey: currentLevelKey2)
+        preferences2.synchronize()
     }
     
     
@@ -75,12 +120,22 @@ class InterfaceController: WKInterfaceController {
         incrementor1 = 0
        let stringperson1incrementor = String(incrementor1)
         person1incrementorview.setText(stringperson1incrementor)
+        let preferences = UserDefaults.standard
+        let currentLevel = incrementor1
+        let currentLevelKey = "currentLevel"
+        preferences.set(currentLevel, forKey: currentLevelKey)
+        preferences.synchronize()
     }
     
     @IBAction func longpressp2incrementor(_ sender: Any) {
         incrementor2 = 0
         let stringperson2incrementor = String(incrementor2)
         person2incrementorview.setText(stringperson2incrementor)
+        let preferences2 = UserDefaults.standard
+        let currentLevel2 = incrementor2
+        let currentLevelKey2 = "currentLevel2"
+        preferences2.set(currentLevel2, forKey: currentLevelKey2)
+        preferences2.synchronize()
     }
     
 }
