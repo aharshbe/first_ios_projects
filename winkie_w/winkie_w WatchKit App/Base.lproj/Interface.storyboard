@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -16,7 +16,7 @@
                     <items>
                         <button width="49" alignment="left" title="+" id="mZo-gB-Ll0">
                             <connections>
-                                <action selector="clickingAddP1" destination="AgC-eL-Hgc" id="fb7-oy-0jB"/>
+                                <action selector="person1incrementoradd" destination="AgC-eL-Hgc" id="lUa-5u-JiI"/>
                             </connections>
                         </button>
                         <label alignment="left" text="Person 1" id="ooL-IH-gNY">
@@ -39,13 +39,13 @@
                         </label>
                         <button width="49" alignment="left" title="-" id="EmY-4M-xu8">
                             <connections>
-                                <action selector="clickingSubP1" destination="AgC-eL-Hgc" id="SGt-ja-3E6"/>
+                                <action selector="person1deincrementorminus" destination="AgC-eL-Hgc" id="HCY-bj-fpj"/>
                             </connections>
                         </button>
                         <separator alignment="left" id="V8z-cr-NB4"/>
                         <button width="49" alignment="left" title="+" id="Cs5-BI-L4A">
                             <connections>
-                                <action selector="clickingAddP2" destination="AgC-eL-Hgc" id="DLy-dU-koQ"/>
+                                <action selector="person2incrementorplus" destination="AgC-eL-Hgc" id="dCO-LM-UYO"/>
                             </connections>
                         </button>
                         <label alignment="left" text="Person 2" id="xOp-uv-U7p">
@@ -68,7 +68,7 @@
                         </label>
                         <button width="49" alignment="left" title="-" id="Lrc-H9-dH0">
                             <connections>
-                                <action selector="clickingSubP2" destination="AgC-eL-Hgc" id="PDZ-Dn-GOz"/>
+                                <action selector="person2deincrementorminus" destination="AgC-eL-Hgc" id="Nid-M7-7OJ"/>
                             </connections>
                         </button>
                     </items>

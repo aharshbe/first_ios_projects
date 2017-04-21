@@ -19,10 +19,14 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet var person2: WKInterfaceLabel!
     @IBOutlet var person2incrementorview: WKInterfaceLabel!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        
+        let person1incrememntor = String(incrementor1)
+        person1incrementorview.setText(person1incrememntor)
     }
     
     override func willActivate() {
@@ -34,32 +38,7 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
-    @IBAction func clickingAddP1() {
-        
-        incrementor1 = incrementor1 + 1
-        let stringperson1incrementor = String(incrementor1)
-        person1.setText(stringperson1incrementor)
-       
-    }
     
-    @IBAction func clickingSubP1() {
-        incrementor1 = incrementor1 - 1
-        let stringperson1incrementor = String(incrementor1)
-        person1incrementorview.setText(stringperson1incrementor)
-    }
-    
-    @IBAction func clickingAddP2() {
-        incrementor2 = incrementor2 + 1
-        let stringperson2incrementor = String(incrementor2)
-        person2incrementorview.setText(stringperson2incrementor)
-    }
-    
-    @IBAction func clickingSubP2() {
-        incrementor2 = incrementor2 + 1
-        let stringperson2incrementor = String(incrementor2)
-        person2.setText(stringperson2incrementor)
-    }
     
     @IBAction func longpressp1(_ sender: Any) {
         person1.setText("Austin")
@@ -67,6 +46,28 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func longpressp2(_ sender: Any) {
         person2.setText("Bryan")
+    }
+    @IBAction func person1incrementoradd() {
+        incrementor1 = incrementor1 + 1
+        let stringperson1incrementor = String(incrementor1)
+        person1incrementorview.setText(stringperson1incrementor)
+    }
+    @IBAction func person1deincrementorminus() {
+        incrementor1 = incrementor1 - 1
+        let stringperson1incrementor = String(incrementor1)
+        person1incrementorview.setText(stringperson1incrementor)
+    }
+    
+    @IBAction func person2incrementorplus() {
+        incrementor2 = incrementor2 + 1
+        let stringperson2incrementor = String(incrementor2)
+        person2incrementorview.setText(stringperson2incrementor)
+    }
+    
+    @IBAction func person2deincrementorminus() {
+        incrementor2 = incrementor2 - 1
+        let stringperson2incrementor = String(incrementor2)
+        person2incrementorview.setText(stringperson2incrementor)
     }
     
     
@@ -79,7 +80,7 @@ class InterfaceController: WKInterfaceController {
     @IBAction func longpressp2incrementor(_ sender: Any) {
         incrementor2 = 0
         let stringperson2incrementor = String(incrementor2)
-        person1incrementorview.setText(stringperson2incrementor)
+        person2incrementorview.setText(stringperson2incrementor)
     }
     
 }
