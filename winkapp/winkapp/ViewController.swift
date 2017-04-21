@@ -199,8 +199,29 @@ class ViewController: UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func person1deincrement(_ sender: UIButton) {
+        incrementorp1 = incrementorp1 - 1
+        let strIn1 = String(incrementorp1)
+        person1incrementorview.text = strIn1
+        let preferences = UserDefaults.standard
+        let currentLevel = incrementorp1
+        let currentLevelKey = "currentLevel"
+        preferences.set(currentLevel, forKey: currentLevelKey)
+        preferences.synchronize()
+
+    }
     
     
+    @IBAction func person2deincrement(_ sender: UIButton) {
+        incrementorp2 = incrementorp2 - 1
+        let strIn2 = String(incrementorp2)
+        person2incrementorview.text = strIn2
+        let preferences2 = UserDefaults.standard
+        let currentLevel2 = incrementorp2
+        let currentLevelKey2 = "currentLevel2"
+        preferences2.set(currentLevel2, forKey: currentLevelKey2)
+        preferences2.synchronize()
+    }
     
     
     
