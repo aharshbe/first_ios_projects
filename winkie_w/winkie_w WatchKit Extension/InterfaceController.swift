@@ -65,12 +65,21 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func longpressp1(_ sender: Any) {
-        person1.setText("Austin")
+    self.presentTextInputController(withSuggestions: ["Frank","Austin"], allowedInputMode: WKTextInputMode.plain,
+                                                       completion:{(results) -> Void in
+                                                        let aResult = results?[0] as? String
+                                                        self.person1.setText(aResult)
+        })
     }
     
     @IBAction func longpressp2(_ sender: Any) {
-        person2.setText("Bryan")
+        self.presentTextInputController(withSuggestions: ["Frank","Austin"], allowedInputMode: WKTextInputMode.plain,
+                                        completion:{(results) -> Void in
+                                            let aResult = results?[0] as? String
+                                            self.person2.setText(aResult)
+        })
     }
+    
     @IBAction func person1incrementoradd() {
         incrementor1 = incrementor1 + 1
         let stringperson1incrementor = String(incrementor1)
