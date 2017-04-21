@@ -36,6 +36,7 @@ class InterfaceController: WKInterfaceController {
             let currentLevel = preferences.integer(forKey: currentLevelKey)
             let strIn1sharedprefs = String(currentLevel)
             person1incrementorview.setText(strIn1sharedprefs)
+            incrementor1 = currentLevel
         }
         //pref 2 (incrementor person 2)
         let preferences2 = UserDefaults.standard
@@ -46,6 +47,7 @@ class InterfaceController: WKInterfaceController {
             let currentLevel2 = preferences2.integer(forKey: currentLevelKey2)
             let strIn2sharedprefs = String(currentLevel2)
             person2incrementorview.setText(strIn2sharedprefs)
+            incrementor2 = currentLevel2
             
             
         }
