@@ -95,17 +95,10 @@ class ViewController: UIViewController {
     }
     
     @IBAction func person1reset(_ sender: Any) {
-        incrementorp1 = 0
-        let strIn1reset = String(0)
-        let preferences = UserDefaults.standard
-        let currentLevel = incrementorp1
-        let currentLevelKey = "currentLevel"
-        preferences.set(currentLevel, forKey: currentLevelKey)
-        preferences.synchronize()
-
-        person1incrementorview.text = strIn1reset
-        let alert = UIAlertController(title: "Hello...", message: "Person 1 winks reset!", preferredStyle: UIAlertControllerStyle.alert)
-        let alertAction = UIAlertAction(title: "Sounds good", style: UIAlertActionStyle.default)
+      
+        
+        let alert = UIAlertController(title: "Hello...", message: "Are you sure you want to reset \(person1.text!) winks?", preferredStyle: UIAlertControllerStyle.alert)
+        let alertAction = UIAlertAction(title: "Cancel", style: .cancel)
         {
             (UIAlertAction) -> Void in
         }
@@ -114,21 +107,24 @@ class ViewController: UIViewController {
         {
             () -> Void in
         }
+        alert.addAction(UIAlertAction(title: "Yes, please", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
+            
+            self.incrementorp1 = 0
+            let strIn1reset = String(0)
+            let preferences = UserDefaults.standard
+            let currentLevel = self.incrementorp1
+            let currentLevelKey = "currentLevel"
+            preferences.set(currentLevel, forKey: currentLevelKey)
+            preferences.synchronize()
+            self.person1incrementorview.text = strIn1reset
+        }))
 
     }
     
     @IBAction func person2reset(_ sender: Any) {
-        incrementorp2 = 0
-        let strIn2reset = String(0)
-        let preferences2 = UserDefaults.standard
-        let currentLevel2 = incrementorp2
-        let currentLevelKey2 = "currentLevel2"
-        preferences2.set(currentLevel2, forKey: currentLevelKey2)
-        preferences2.synchronize()
         
-        person2incrementorview.text = strIn2reset
-        let alert = UIAlertController(title: "Hello...", message: "Person 2 winks reset!", preferredStyle: UIAlertControllerStyle.alert)
-        let alertAction = UIAlertAction(title: "Sounds good", style: UIAlertActionStyle.default)
+        let alert = UIAlertController(title: "Hello...", message: "Are you sure you want to reset \(person2.text!) winks?", preferredStyle: UIAlertControllerStyle.alert)
+        let alertAction = UIAlertAction(title: "Cancel", style: .cancel)
         {
             (UIAlertAction) -> Void in
         }
@@ -137,6 +133,17 @@ class ViewController: UIViewController {
         {
             () -> Void in
         }
+        alert.addAction(UIAlertAction(title: "Yes, please", style: UIAlertActionStyle.default, handler: { (action: UIAlertAction!) in
+            
+            self.incrementorp2 = 0
+            let strIn2reset = String(0)
+            let preferences2 = UserDefaults.standard
+            let currentLevel2 = self.incrementorp2
+            let currentLevelKey2 = "currentLevel2"
+            preferences2.set(currentLevel2, forKey: currentLevelKey2)
+            preferences2.synchronize()
+            self.person2incrementorview.text = strIn2reset
+        }))
 
     }
     
