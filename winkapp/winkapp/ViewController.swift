@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var person2incrementorview: UILabel!
     
-    var incrementorp1 = 1
-    var incrementorp2 = 1
+    var incrementorp1 = 0
+    var incrementorp2 = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -184,5 +184,12 @@ class ViewController: UIViewController {
         // 4. Present the alert.
         self.present(alert, animated: true, completion: nil)
     }
+    
+    
+    
+    
+    
+    
+    
 }
 
