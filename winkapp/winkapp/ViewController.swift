@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //pref 1 (incrementor incrementor person 1)
         let preferences = UserDefaults.standard
         let currentLevelKey = "currentLevel"
         if preferences.object(forKey: currentLevelKey) == nil {
@@ -34,6 +35,7 @@ class ViewController: UIViewController {
             let strIn1sharedprefs = String(currentLevel)
             person1incrementorview.text = strIn1sharedprefs
         }
+        //pref 2 (incrementor person 2)
         let preferences2 = UserDefaults.standard
         let currentLevelKey2 = "currentLevel2"
         if preferences2.object(forKey: currentLevelKey2) == nil {
@@ -43,6 +45,19 @@ class ViewController: UIViewController {
             let strIn2sharedprefs = String(currentLevel2)
             person2incrementorview.text = strIn2sharedprefs
         }
+        //pref 3 (person 1 name)
+        
+        let userName = UserDefaults.standard.string(forKey: "username")
+        person1.text = userName
+        
+        
+        //pref 4 (person 2 name)
+        
+        let userName2 = UserDefaults.standard.string(forKey: "username2")
+        person2.text = userName2
+
+
+      
     }
 
     override func didReceiveMemoryWarning() {
@@ -124,8 +139,10 @@ class ViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Change", style: .default, handler: { [weak alert] (_) in
                 let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
                 self.person1.text = textField?.text!
+                UserDefaults.standard.set(textField?.text!, forKey: "username")
+
             }))
-            
+        
             // 4. Present the alert.
             self.present(alert, animated: true, completion: nil)
     }
@@ -143,6 +160,9 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "Change", style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
             self.person2.text = textField?.text!
+            UserDefaults.standard.set(textField?.text!, forKey: "username2")
+            
+            
         }))
         
         // 4. Present the alert.
