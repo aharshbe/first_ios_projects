@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E9307AC1EAAC603008FD647 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E9307AB1EAAC603008FD647 /* Media.xcassets */; };
 		6EEC11AD1EA9E1F9002E892B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC11AC1EA9E1F9002E892B /* AppDelegate.swift */; };
 		6EEC11AF1EA9E1F9002E892B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EEC11AE1EA9E1F9002E892B /* ViewController.swift */; };
 		6EEC11B21EA9E1F9002E892B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EEC11B01EA9E1F9002E892B /* Main.storyboard */; };
@@ -80,6 +81,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6E9307AB1EAAC603008FD647 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		6EEC11A91EA9E1F9002E892B /* winkie_w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = winkie_w.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EEC11AC1EA9E1F9002E892B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EEC11AE1EA9E1F9002E892B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 				6EEC11AC1EA9E1F9002E892B /* AppDelegate.swift */,
 				6EEC11AE1EA9E1F9002E892B /* ViewController.swift */,
 				6EEC11B01EA9E1F9002E892B /* Main.storyboard */,
+				6E9307AB1EAAC603008FD647 /* Media.xcassets */,
 				6EEC11B51EA9E1F9002E892B /* LaunchScreen.storyboard */,
 				6EEC11B81EA9E1F9002E892B /* Info.plist */,
 			);
@@ -381,6 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EEC11B71EA9E1F9002E892B /* LaunchScreen.storyboard in Resources */,
+				6E9307AC1EAAC603008FD647 /* Media.xcassets in Resources */,
 				6EEC11B21EA9E1F9002E892B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

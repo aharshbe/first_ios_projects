@@ -80,7 +80,7 @@ class InterfaceController: WKInterfaceController {
     
     
     @IBAction func longpressp1(_ sender: Any) {
-    self.presentTextInputController(withSuggestions: ["Frank","Austin"], allowedInputMode: WKTextInputMode.plain,
+    self.presentTextInputController(withSuggestions: ["Bryan","Austin","Beatris"], allowedInputMode: WKTextInputMode.plain,
                                                        completion:{(results) -> Void in
                                                         let aResult = results?[0] as? String
                                                         self.person1.setText(aResult)
@@ -89,7 +89,7 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func longpressp2(_ sender: Any) {
-        self.presentTextInputController(withSuggestions: ["Frank","Austin"], allowedInputMode: WKTextInputMode.plain,
+        self.presentTextInputController(withSuggestions: ["Bryan","Austin","Ugla"], allowedInputMode: WKTextInputMode.plain,
                                         completion:{(results) -> Void in
                                             let aResult = results?[0] as? String
                                             self.person2.setText(aResult)
