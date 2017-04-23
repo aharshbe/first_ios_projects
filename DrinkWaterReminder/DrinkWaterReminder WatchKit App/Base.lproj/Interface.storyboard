@@ -46,19 +46,28 @@
                             <color key="color" red="0.48560634689999999" green="0.6242473503" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </separator>
                         <label alignment="left" text="⚠️Remember to eat too, we dont' want a handover do we!😁" numberOfLines="4" id="o1M-V8-7ph"/>
+                        <separator alignment="left" id="7Yo-82-WwP">
+                            <color key="color" red="1" green="0.43785649869999999" blue="0.71330893159999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
+                        <label width="136" height="48" alignment="left" text="Total # of drinks over lifetime 🍻" numberOfLines="2" id="cOs-19-m0q"/>
+                        <label alignment="center" text="0" textAlignment="center" id="mQy-zf-f4J"/>
                         <button width="65" alignment="center" verticalAlignment="center" title="Reset" id="Iom-GS-VIX">
                             <connections>
                                 <action selector="clickingReset" destination="AgC-eL-Hgc" id="6ea-ax-WDd"/>
                             </connections>
                         </button>
+                        <separator alignment="left" id="rcM-eu-hE5">
+                            <color key="color" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
                     </items>
                     <connections>
                         <outlet property="numberofdrinks" destination="IDz-Zl-Avs" id="gj8-3K-WGg"/>
                         <outlet property="numberofwaterleft" destination="fGX-ni-Gcn" id="ib2-ZH-hMU"/>
+                        <outlet property="totalnumberofdrinks" destination="mQy-zf-f4J" id="NkA-q6-6hB"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="257"/>
+            <point key="canvasLocation" x="220" y="270.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

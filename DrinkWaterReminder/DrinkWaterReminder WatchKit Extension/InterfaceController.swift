@@ -14,11 +14,15 @@ class InterfaceController: WKInterfaceController {
     
     var incrementordrinks = 0
     var incrementorwater = 0
+    var totalnumberofdrinksincrementor = 0
     
     
     @IBOutlet var numberofdrinks: WKInterfaceLabel!
 
     @IBOutlet var numberofwaterleft: WKInterfaceLabel!
+    
+    @IBOutlet var totalnumberofdrinks: WKInterfaceLabel!
+    
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -50,6 +54,19 @@ class InterfaceController: WKInterfaceController {
             
             
         }
+        //pref 2 (incrementor person 2)
+        let preferences3 = UserDefaults.standard
+        let currentLevelKey3 = "currentLevel3"
+        if preferences3.object(forKey: currentLevelKey3) == nil {
+            //  Doesn't exist
+        } else {
+            let currentLevel3 = preferences3.integer(forKey: currentLevelKey3)
+            let strIn3sharedprefs = String(currentLevel3)
+            totalnumberofdrinks.setText(strIn3sharedprefs)
+            incrementordrinks = currentLevel3
+            
+            
+        }
     }
     
     override func willActivate() {
@@ -66,10 +83,14 @@ class InterfaceController: WKInterfaceController {
     @IBAction func clickingplusdrinks() {
         incrementorwater = incrementorwater + 1
         incrementordrinks = incrementordrinks + 1
+        totalnumberofdrinksincrementor = totalnumberofdrinksincrementor + 1
+        
         let incrementorwaterstring = String(incrementorwater)
         let anddrinks = String(incrementordrinks)
+        let totalnumnberofdrinksvar = String(totalnumberofdrinksincrementor)
         numberofdrinks.setText(anddrinks)
         numberofwaterleft.setText(incrementorwaterstring)
+        totalnumberofdrinks.setText(totalnumnberofdrinksvar)
         
         let preferences = UserDefaults.standard
         let currentLevel = incrementorwater
@@ -82,6 +103,12 @@ class InterfaceController: WKInterfaceController {
         let currentLevelKey2 = "currentLevel2"
         preferences2.set(currentLevel2, forKey: currentLevelKey2)
         preferences2.synchronize()
+        
+        let preferences3 = UserDefaults.standard
+        let currentLevel3 = totalnumberofdrinksincrementor
+        let currentLevelKey3 = "currentLevel3"
+        preferences3.set(currentLevel3, forKey: currentLevelKey3)
+        preferences3.synchronize()
     }
 
 
