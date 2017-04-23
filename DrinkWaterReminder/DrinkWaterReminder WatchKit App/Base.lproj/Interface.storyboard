@@ -14,35 +14,53 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DrinkWaterReminder_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <imageView width="50" height="55" alignment="left" image="Drink" id="qM6-NZ-pmi"/>
-                        <label width="1" alignment="right" text="# of drinks" textAlignment="center" id="38a-sR-4NQ"/>
+                        <separator alignment="left" id="h3M-xa-Dxh">
+                            <color key="color" red="1" green="0.25533974189999997" blue="0.33707876240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
+                        <imageView width="45" height="48" alignment="left" image="Drink" id="qM6-NZ-pmi">
+                            <color key="tintColor" red="1" green="0.43785649869999999" blue="0.71330893159999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </imageView>
+                        <label width="1" alignment="right" text="You drank:" textAlignment="center" id="38a-sR-4NQ"/>
                         <label alignment="center" text="0" textAlignment="center" id="IDz-Zl-Avs"/>
                         <button width="42" height="37" alignment="right" title="+" id="Ih8-ZW-J1X">
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="backgroundColor" red="1" green="0.2553397419065323" blue="0.33707876236707734" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="clickingplusdrinks" destination="AgC-eL-Hgc" id="44X-fy-AgT"/>
                             </connections>
                         </button>
-                        <separator alignment="left" id="h3M-xa-Dxh"/>
+                        <separator alignment="left" id="idv-8F-I29">
+                            <color key="color" red="0.94673549107142863" green="0.28621888290000003" blue="0.95261120799999999" alpha="0.33486465669999999" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
                         <imageView width="46" height="42" alignment="left" image="Water" id="cJu-PZ-OIf"/>
-                        <label width="118" alignment="center" text="Drinks left:" textAlignment="left" id="x5J-27-vES"/>
+                        <label width="118" alignment="center" text="Drink H20" textAlignment="center" id="x5J-27-vES"/>
                         <label alignment="center" text="0" textAlignment="center" id="fGX-ni-Gcn"/>
-                        <button width="44" height="37" alignment="right" title="+" id="oPW-zK-Har">
+                        <button width="116" height="37" alignment="center" title="I had a water" id="oPW-zK-Har">
                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="backgroundColor" red="0.48560634689999999" green="0.6242473503" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
-                                <action selector="clickingpluswater" destination="AgC-eL-Hgc" id="483-ym-Aca"/>
+                                <action selector="ihadwaterclick" destination="AgC-eL-Hgc" id="zLx-aR-Yar"/>
                             </connections>
                         </button>
+                        <separator alignment="left" id="6yR-0r-iZv">
+                            <color key="color" red="0.48560634689999999" green="0.6242473503" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
+                        <button width="65" alignment="center" verticalAlignment="center" title="Reset" id="Iom-GS-VIX">
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer id="odu-ow-zNf">
+                                    <connections>
+                                        <action selector="longpressonreset:" destination="AgC-eL-Hgc" id="bo6-ZW-00x"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
+                        </button>
                     </items>
-                    <color key="backgroundColor" red="1" green="0.43785649870735932" blue="0.71330893155631947" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <connections>
                         <outlet property="numberofdrinks" destination="IDz-Zl-Avs" id="gj8-3K-WGg"/>
                         <outlet property="numberofwaterleft" destination="fGX-ni-Gcn" id="ib2-ZH-hMU"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="262"/>
+            <point key="canvasLocation" x="220" y="257.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

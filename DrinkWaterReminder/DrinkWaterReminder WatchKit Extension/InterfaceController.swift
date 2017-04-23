@@ -24,6 +24,32 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        
+        
+        //pref 1 (incrementor incrementor person 1)
+        let preferences = UserDefaults.standard
+        let currentLevelKey = "currentLevel"
+        if preferences.object(forKey: currentLevelKey) == nil {
+            //  Doesn't exist
+        } else {
+            let currentLevel = preferences.integer(forKey: currentLevelKey)
+            let strIn1sharedprefs = String(currentLevel)
+            numberofwaterleft.setText(strIn1sharedprefs)
+            incrementorwater = currentLevel
+        }
+        //pref 2 (incrementor person 2)
+        let preferences2 = UserDefaults.standard
+        let currentLevelKey2 = "currentLevel2"
+        if preferences2.object(forKey: currentLevelKey2) == nil {
+            //  Doesn't exist
+        } else {
+            let currentLevel2 = preferences2.integer(forKey: currentLevelKey2)
+            let strIn2sharedprefs = String(currentLevel2)
+            numberofdrinks.setText(strIn2sharedprefs)
+            incrementordrinks = currentLevel2
+            
+            
+        }
     }
     
     override func willActivate() {
@@ -35,18 +61,68 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
-    @IBAction func clickingpluswater() {
-        incrementorwater = incrementorwater + 1
-        let incrementorwaterstring = String(incrementorwater)
-        numberofdrinks.setText(incrementorwaterstring)
-    }
     
     
     @IBAction func clickingplusdrinks() {
+        incrementorwater = incrementorwater + 1
+        incrementordrinks = incrementordrinks + 1
+        let incrementorwaterstring = String(incrementorwater)
+        let anddrinks = String(incrementordrinks)
+        numberofdrinks.setText(anddrinks)
+        numberofwaterleft.setText(incrementorwaterstring)
+        
+        let preferences = UserDefaults.standard
+        let currentLevel = incrementorwater
+        let currentLevelKey = "currentLevel"
+        preferences.set(currentLevel, forKey: currentLevelKey)
+        preferences.synchronize()
+        
+        let preferences2 = UserDefaults.standard
+        let currentLevel2 = incrementordrinks
+        let currentLevelKey2 = "currentLevel2"
+        preferences2.set(currentLevel2, forKey: currentLevelKey2)
+        preferences2.synchronize()
     }
 
 
+    @IBAction func ihadwaterclick() {
+        incrementorwater = incrementorwater - 1
+        let incrementorwaterstring = String(incrementorwater)
+        numberofwaterleft.setText(incrementorwaterstring)
+        
+        let preferences = UserDefaults.standard
+        let currentLevel = incrementorwater
+        let currentLevelKey = "currentLevel"
+        preferences.set(currentLevel, forKey: currentLevelKey)
+        preferences.synchronize()
 
+        
+    }
+
+    @IBAction func longpressonreset(_ sender: Any) {
+        incrementorwater = 0
+        incrementordrinks = 0
+        
+        let incrementorwaterstring = String(incrementorwater)
+        numberofwaterleft.setText(incrementorwaterstring)
+        
+        let anddrinks = String(incrementordrinks)
+        numberofdrinks.setText(anddrinks)
+        
+        
+        
+        
+        let preferences = UserDefaults.standard
+        let currentLevel = incrementorwater
+        let currentLevelKey = "currentLevel"
+        preferences.set(currentLevel, forKey: currentLevelKey)
+        preferences.synchronize()
+        
+        let preferences2 = UserDefaults.standard
+        let currentLevel2 = incrementordrinks
+        let currentLevelKey2 = "currentLevel2"
+        preferences2.set(currentLevel2, forKey: currentLevelKey2)
+        preferences2.synchronize()
+    }
 
 }
