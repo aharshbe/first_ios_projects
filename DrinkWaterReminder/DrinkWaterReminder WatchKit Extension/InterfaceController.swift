@@ -124,5 +124,8 @@ class InterfaceController: WKInterfaceController {
         let currentLevelKey2 = "currentLevel2"
         preferences2.set(currentLevel2, forKey: currentLevelKey2)
         preferences2.synchronize()
+        
+       
+        
     }
 }
