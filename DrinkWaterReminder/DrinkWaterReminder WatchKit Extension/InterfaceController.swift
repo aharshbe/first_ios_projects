@@ -99,7 +99,8 @@ class InterfaceController: WKInterfaceController {
         
     }
 
-    @IBAction func longpressonreset(_ sender: Any) {
+    
+    @IBAction func clickingReset() {
         incrementorwater = 0
         incrementordrinks = 0
         
@@ -124,5 +125,4 @@ class InterfaceController: WKInterfaceController {
         preferences2.set(currentLevel2, forKey: currentLevelKey2)
         preferences2.synchronize()
     }
-
 }

@@ -45,13 +45,9 @@
                             <color key="color" red="0.48560634689999999" green="0.6242473503" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </separator>
                         <button width="65" alignment="center" verticalAlignment="center" title="Reset" id="Iom-GS-VIX">
-                            <gestureRecognizers>
-                                <longPressGestureRecognizer id="odu-ow-zNf">
-                                    <connections>
-                                        <action selector="longpressonreset:" destination="AgC-eL-Hgc" id="bo6-ZW-00x"/>
-                                    </connections>
-                                </longPressGestureRecognizer>
-                            </gestureRecognizers>
+                            <connections>
+                                <action selector="clickingReset" destination="AgC-eL-Hgc" id="6ea-ax-WDd"/>
+                            </connections>
                         </button>
                     </items>
                     <connections>

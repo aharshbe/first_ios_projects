@@ -783,6 +783,7 @@
 				6EB49B0E1EAC14530089DF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EB49B101EAC14530089DF53 /* Build configuration list for PBXNativeTarget "DrinkWaterReminder WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -791,6 +792,7 @@
 				6EB49B121EAC14530089DF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EB49B141EAC14530089DF53 /* Build configuration list for PBXNativeTarget "DrinkWaterReminder" */ = {
 			isa = XCConfigurationList;
@@ -799,6 +801,7 @@
 				6EB49B161EAC14530089DF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EB49B171EAC14530089DF53 /* Build configuration list for PBXNativeTarget "DrinkWaterReminderTests" */ = {
 			isa = XCConfigurationList;
@@ -807,6 +810,7 @@
 				6EB49B191EAC14530089DF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EB49B1A1EAC14530089DF53 /* Build configuration list for PBXNativeTarget "DrinkWaterReminderUITests" */ = {
 			isa = XCConfigurationList;
@@ -815,6 +819,7 @@
 				6EB49B1C1EAC14530089DF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
