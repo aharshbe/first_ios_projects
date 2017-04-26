@@ -67,7 +67,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="270.5"/>
+            <point key="canvasLocation" x="208" y="139"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

@@ -138,8 +138,6 @@ class InterfaceController: WKInterfaceController {
         numberofdrinks.setText(anddrinks)
         
         
-        
-        
         let preferences = UserDefaults.standard
         let currentLevel = incrementorwater
         let currentLevelKey = "currentLevel"
