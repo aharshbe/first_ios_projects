@@ -160,7 +160,7 @@ class InterfaceController: WKInterfaceController {
         let action1 = WKAlertAction(title: "Thanks", style: .default, handler:h0)
        
         
-        presentAlert(withTitle: "Voila", message: "Drinks reset", preferredStyle: .actionSheet, actions: [action1])
+        presentAlert(withTitle: "Voila...", message: "Drinks reset 👌🏼", preferredStyle: .actionSheet, actions: [action1])
         
         
     }
