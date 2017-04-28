@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12118" systemVersion="16B2657" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
     </dependencies>
     <scenes>
@@ -52,6 +52,13 @@
                         <label width="136" height="48" alignment="left" text="Total # of drinks over lifetime 🍻" numberOfLines="2" id="cOs-19-m0q"/>
                         <label alignment="center" text="0" textAlignment="center" id="mQy-zf-f4J"/>
                         <button width="65" alignment="center" verticalAlignment="center" title="Reset" id="Iom-GS-VIX">
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer id="QiQ-yp-6tb">
+                                    <connections>
+                                        <action selector="longPressReset:" destination="AgC-eL-Hgc" id="puB-Nr-Ou3"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
                             <connections>
                                 <action selector="clickingReset" destination="AgC-eL-Hgc" id="6ea-ax-WDd"/>
                             </connections>

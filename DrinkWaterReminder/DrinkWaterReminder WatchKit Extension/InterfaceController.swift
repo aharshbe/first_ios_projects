@@ -29,6 +29,9 @@ class InterfaceController: WKInterfaceController {
         
         // Configure interface objects here.
         
+      
+
+        
         
         //pref 1 (incrementor incrementor person 1)
         let preferences = UserDefaults.standard
@@ -150,7 +153,20 @@ class InterfaceController: WKInterfaceController {
         preferences2.set(currentLevel2, forKey: currentLevelKey2)
         preferences2.synchronize()
         
-       
         
     }
+    
+    @IBAction func longPressReset(_ sender: Any) {
+        let h0 = {self.totalnumberofdrinks.setText("this")}
+        
+        let action1 = WKAlertAction(title: "Approve", style: .default, handler:h0)
+        let action2 = WKAlertAction(title: "Decline", style: .destructive) {}
+        let action3 = WKAlertAction(title: "Cancel", style: .cancel) {}
+        
+        presentAlert(withTitle: "Voila", message: "Hello, testing", preferredStyle: .actionSheet, actions: [action1, action2,action3])
+        
+  
+    }
+
+    
 }

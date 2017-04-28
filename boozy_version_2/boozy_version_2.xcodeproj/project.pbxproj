@@ -1,0 +1,832 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E0354BD1EB2997B0072517C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0354BC1EB2997B0072517C /* AppDelegate.swift */; };
+		6E0354BF1EB2997B0072517C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0354BE1EB2997B0072517C /* ViewController.swift */; };
+		6E0354C21EB2997B0072517C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0354C01EB2997B0072517C /* Main.storyboard */; };
+		6E0354C41EB2997B0072517C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0354C31EB2997B0072517C /* Assets.xcassets */; };
+		6E0354C71EB2997B0072517C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0354C51EB2997B0072517C /* LaunchScreen.storyboard */; };
+		6E0354D21EB2997B0072517C /* boozy_version_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0354D11EB2997B0072517C /* boozy_version_2Tests.swift */; };
+		6E0354DD1EB2997B0072517C /* boozy_version_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0354DC1EB2997B0072517C /* boozy_version_2UITests.swift */; };
+		6E0354E21EB2997B0072517C /* boozy_version_2 WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6E0354E11EB2997B0072517C /* boozy_version_2 WatchKit App.app */; };
+		6E0354E81EB2997B0072517C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0354E61EB2997B0072517C /* Interface.storyboard */; };
+		6E0354EA1EB2997B0072517C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0354E91EB2997B0072517C /* Assets.xcassets */; };
+		6E0354F11EB2997B0072517C /* boozy_version_2 WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 6E0354F01EB2997B0072517C /* boozy_version_2 WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6E0354F81EB2997B0072517C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0354F71EB2997B0072517C /* InterfaceController.swift */; };
+		6E0354FA1EB2997B0072517C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0354F91EB2997B0072517C /* ExtensionDelegate.swift */; };
+		6E0354FC1EB2997B0072517C /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0354FB1EB2997B0072517C /* NotificationController.swift */; };
+		6E0354FE1EB2997B0072517C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E0354FD1EB2997B0072517C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6E0354CE1EB2997B0072517C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0354B11EB2997B0072517C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0354B81EB2997B0072517C;
+			remoteInfo = boozy_version_2;
+		};
+		6E0354D91EB2997B0072517C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0354B11EB2997B0072517C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0354B81EB2997B0072517C;
+			remoteInfo = boozy_version_2;
+		};
+		6E0354E31EB2997B0072517C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0354B11EB2997B0072517C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0354E01EB2997B0072517C;
+			remoteInfo = "boozy_version_2 WatchKit App";
+		};
+		6E0354F21EB2997B0072517C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0354B11EB2997B0072517C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0354EF1EB2997B0072517C;
+			remoteInfo = "boozy_version_2 WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E0355051EB2997B0072517C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				6E0354F11EB2997B0072517C /* boozy_version_2 WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0355091EB2997B0072517C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6E0354E21EB2997B0072517C /* boozy_version_2 WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6E0354B91EB2997B0072517C /* boozy_version_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boozy_version_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0354BC1EB2997B0072517C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6E0354BE1EB2997B0072517C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6E0354C11EB2997B0072517C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6E0354C31EB2997B0072517C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E0354C61EB2997B0072517C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6E0354C81EB2997B0072517C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0354CD1EB2997B0072517C /* boozy_version_2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boozy_version_2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0354D11EB2997B0072517C /* boozy_version_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boozy_version_2Tests.swift; sourceTree = "<group>"; };
+		6E0354D31EB2997B0072517C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0354D81EB2997B0072517C /* boozy_version_2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boozy_version_2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0354DC1EB2997B0072517C /* boozy_version_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boozy_version_2UITests.swift; sourceTree = "<group>"; };
+		6E0354DE1EB2997B0072517C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0354E11EB2997B0072517C /* boozy_version_2 WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "boozy_version_2 WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0354E71EB2997B0072517C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		6E0354E91EB2997B0072517C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E0354EB1EB2997B0072517C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0354F01EB2997B0072517C /* boozy_version_2 WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "boozy_version_2 WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E0354F61EB2997B0072517C /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		6E0354F71EB2997B0072517C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		6E0354F91EB2997B0072517C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		6E0354FB1EB2997B0072517C /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		6E0354FD1EB2997B0072517C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6E0354FF1EB2997B0072517C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E0355141EB2A8710072517C /* boozy_version_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = boozy_version_2.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6E0354B61EB2997B0072517C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354CA1EB2997B0072517C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354D51EB2997B0072517C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354ED1EB2997B0072517C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6E0354B01EB2997B0072517C = {
+			isa = PBXGroup;
+			children = (
+				6E0354BB1EB2997B0072517C /* boozy_version_2 */,
+				6E0354D01EB2997B0072517C /* boozy_version_2Tests */,
+				6E0354DB1EB2997B0072517C /* boozy_version_2UITests */,
+				6E0354E51EB2997B0072517C /* boozy_version_2 WatchKit App */,
+				6E0354F41EB2997B0072517C /* boozy_version_2 WatchKit Extension */,
+				6E0354BA1EB2997B0072517C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6E0354BA1EB2997B0072517C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6E0354B91EB2997B0072517C /* boozy_version_2.app */,
+				6E0354CD1EB2997B0072517C /* boozy_version_2Tests.xctest */,
+				6E0354D81EB2997B0072517C /* boozy_version_2UITests.xctest */,
+				6E0354E11EB2997B0072517C /* boozy_version_2 WatchKit App.app */,
+				6E0354F01EB2997B0072517C /* boozy_version_2 WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6E0354BB1EB2997B0072517C /* boozy_version_2 */ = {
+			isa = PBXGroup;
+			children = (
+				6E0355141EB2A8710072517C /* boozy_version_2.entitlements */,
+				6E0354BC1EB2997B0072517C /* AppDelegate.swift */,
+				6E0354BE1EB2997B0072517C /* ViewController.swift */,
+				6E0354C01EB2997B0072517C /* Main.storyboard */,
+				6E0354C31EB2997B0072517C /* Assets.xcassets */,
+				6E0354C51EB2997B0072517C /* LaunchScreen.storyboard */,
+				6E0354C81EB2997B0072517C /* Info.plist */,
+			);
+			path = boozy_version_2;
+			sourceTree = "<group>";
+		};
+		6E0354D01EB2997B0072517C /* boozy_version_2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				6E0354D11EB2997B0072517C /* boozy_version_2Tests.swift */,
+				6E0354D31EB2997B0072517C /* Info.plist */,
+			);
+			path = boozy_version_2Tests;
+			sourceTree = "<group>";
+		};
+		6E0354DB1EB2997B0072517C /* boozy_version_2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				6E0354DC1EB2997B0072517C /* boozy_version_2UITests.swift */,
+				6E0354DE1EB2997B0072517C /* Info.plist */,
+			);
+			path = boozy_version_2UITests;
+			sourceTree = "<group>";
+		};
+		6E0354E51EB2997B0072517C /* boozy_version_2 WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				6E0354E61EB2997B0072517C /* Interface.storyboard */,
+				6E0354E91EB2997B0072517C /* Assets.xcassets */,
+				6E0354EB1EB2997B0072517C /* Info.plist */,
+			);
+			path = "boozy_version_2 WatchKit App";
+			sourceTree = "<group>";
+		};
+		6E0354F41EB2997B0072517C /* boozy_version_2 WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6E0354F71EB2997B0072517C /* InterfaceController.swift */,
+				6E0354F91EB2997B0072517C /* ExtensionDelegate.swift */,
+				6E0354FB1EB2997B0072517C /* NotificationController.swift */,
+				6E0354FD1EB2997B0072517C /* Assets.xcassets */,
+				6E0354FF1EB2997B0072517C /* Info.plist */,
+				6E0354F51EB2997B0072517C /* Supporting Files */,
+			);
+			path = "boozy_version_2 WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		6E0354F51EB2997B0072517C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6E0354F61EB2997B0072517C /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6E0354B81EB2997B0072517C /* boozy_version_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E03550A1EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2" */;
+			buildPhases = (
+				6E0354B51EB2997B0072517C /* Sources */,
+				6E0354B61EB2997B0072517C /* Frameworks */,
+				6E0354B71EB2997B0072517C /* Resources */,
+				6E0355091EB2997B0072517C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E0354E41EB2997B0072517C /* PBXTargetDependency */,
+			);
+			name = boozy_version_2;
+			productName = boozy_version_2;
+			productReference = 6E0354B91EB2997B0072517C /* boozy_version_2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6E0354CC1EB2997B0072517C /* boozy_version_2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E03550D1EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2Tests" */;
+			buildPhases = (
+				6E0354C91EB2997B0072517C /* Sources */,
+				6E0354CA1EB2997B0072517C /* Frameworks */,
+				6E0354CB1EB2997B0072517C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E0354CF1EB2997B0072517C /* PBXTargetDependency */,
+			);
+			name = boozy_version_2Tests;
+			productName = boozy_version_2Tests;
+			productReference = 6E0354CD1EB2997B0072517C /* boozy_version_2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6E0354D71EB2997B0072517C /* boozy_version_2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0355101EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2UITests" */;
+			buildPhases = (
+				6E0354D41EB2997B0072517C /* Sources */,
+				6E0354D51EB2997B0072517C /* Frameworks */,
+				6E0354D61EB2997B0072517C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E0354DA1EB2997B0072517C /* PBXTargetDependency */,
+			);
+			name = boozy_version_2UITests;
+			productName = boozy_version_2UITests;
+			productReference = 6E0354D81EB2997B0072517C /* boozy_version_2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		6E0354E01EB2997B0072517C /* boozy_version_2 WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0355061EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2 WatchKit App" */;
+			buildPhases = (
+				6E0354DF1EB2997B0072517C /* Resources */,
+				6E0355051EB2997B0072517C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E0354F31EB2997B0072517C /* PBXTargetDependency */,
+			);
+			name = "boozy_version_2 WatchKit App";
+			productName = "boozy_version_2 WatchKit App";
+			productReference = 6E0354E11EB2997B0072517C /* boozy_version_2 WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		6E0354EF1EB2997B0072517C /* boozy_version_2 WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E0355021EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2 WatchKit Extension" */;
+			buildPhases = (
+				6E0354EC1EB2997B0072517C /* Sources */,
+				6E0354ED1EB2997B0072517C /* Frameworks */,
+				6E0354EE1EB2997B0072517C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "boozy_version_2 WatchKit Extension";
+			productName = "boozy_version_2 WatchKit Extension";
+			productReference = 6E0354F01EB2997B0072517C /* boozy_version_2 WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6E0354B11EB2997B0072517C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Austin Harshberger";
+				TargetAttributes = {
+					6E0354B81EB2997B0072517C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F869869292;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					6E0354CC1EB2997B0072517C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F869869292;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6E0354B81EB2997B0072517C;
+					};
+					6E0354D71EB2997B0072517C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F869869292;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6E0354B81EB2997B0072517C;
+					};
+					6E0354E01EB2997B0072517C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F869869292;
+						ProvisioningStyle = Automatic;
+					};
+					6E0354EF1EB2997B0072517C = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F869869292;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6E0354B41EB2997B0072517C /* Build configuration list for PBXProject "boozy_version_2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6E0354B01EB2997B0072517C;
+			productRefGroup = 6E0354BA1EB2997B0072517C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6E0354B81EB2997B0072517C /* boozy_version_2 */,
+				6E0354CC1EB2997B0072517C /* boozy_version_2Tests */,
+				6E0354D71EB2997B0072517C /* boozy_version_2UITests */,
+				6E0354E01EB2997B0072517C /* boozy_version_2 WatchKit App */,
+				6E0354EF1EB2997B0072517C /* boozy_version_2 WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6E0354B71EB2997B0072517C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0354C71EB2997B0072517C /* LaunchScreen.storyboard in Resources */,
+				6E0354C41EB2997B0072517C /* Assets.xcassets in Resources */,
+				6E0354C21EB2997B0072517C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354CB1EB2997B0072517C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354D61EB2997B0072517C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354DF1EB2997B0072517C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0354EA1EB2997B0072517C /* Assets.xcassets in Resources */,
+				6E0354E81EB2997B0072517C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354EE1EB2997B0072517C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0354FE1EB2997B0072517C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6E0354B51EB2997B0072517C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0354BF1EB2997B0072517C /* ViewController.swift in Sources */,
+				6E0354BD1EB2997B0072517C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354C91EB2997B0072517C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0354D21EB2997B0072517C /* boozy_version_2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354D41EB2997B0072517C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0354DD1EB2997B0072517C /* boozy_version_2UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E0354EC1EB2997B0072517C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E0354FC1EB2997B0072517C /* NotificationController.swift in Sources */,
+				6E0354FA1EB2997B0072517C /* ExtensionDelegate.swift in Sources */,
+				6E0354F81EB2997B0072517C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6E0354CF1EB2997B0072517C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0354B81EB2997B0072517C /* boozy_version_2 */;
+			targetProxy = 6E0354CE1EB2997B0072517C /* PBXContainerItemProxy */;
+		};
+		6E0354DA1EB2997B0072517C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0354B81EB2997B0072517C /* boozy_version_2 */;
+			targetProxy = 6E0354D91EB2997B0072517C /* PBXContainerItemProxy */;
+		};
+		6E0354E41EB2997B0072517C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0354E01EB2997B0072517C /* boozy_version_2 WatchKit App */;
+			targetProxy = 6E0354E31EB2997B0072517C /* PBXContainerItemProxy */;
+		};
+		6E0354F31EB2997B0072517C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0354EF1EB2997B0072517C /* boozy_version_2 WatchKit Extension */;
+			targetProxy = 6E0354F21EB2997B0072517C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6E0354C01EB2997B0072517C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E0354C11EB2997B0072517C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6E0354C51EB2997B0072517C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E0354C61EB2997B0072517C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6E0354E61EB2997B0072517C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6E0354E71EB2997B0072517C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6E0355001EB2997B0072517C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6E0355011EB2997B0072517C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6E0355031EB2997B0072517C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = F869869292;
+				INFOPLIST_FILE = "boozy_version_2 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		6E0355041EB2997B0072517C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = F869869292;
+				INFOPLIST_FILE = "boozy_version_2 WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		6E0355071EB2997B0072517C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F869869292;
+				IBSC_MODULE = boozy_version_2_WatchKit_Extension;
+				INFOPLIST_FILE = "boozy_version_2 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		6E0355081EB2997B0072517C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F869869292;
+				IBSC_MODULE = boozy_version_2_WatchKit_Extension;
+				INFOPLIST_FILE = "boozy_version_2 WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		6E03550B1EB2997B0072517C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = boozy_version_2/boozy_version_2.entitlements;
+				DEVELOPMENT_TEAM = F869869292;
+				INFOPLIST_FILE = boozy_version_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6E03550C1EB2997B0072517C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = boozy_version_2/boozy_version_2.entitlements;
+				DEVELOPMENT_TEAM = F869869292;
+				INFOPLIST_FILE = boozy_version_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6E03550E1EB2997B0072517C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F869869292;
+				INFOPLIST_FILE = boozy_version_2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boozy_version_2.app/boozy_version_2";
+			};
+			name = Debug;
+		};
+		6E03550F1EB2997B0072517C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = F869869292;
+				INFOPLIST_FILE = boozy_version_2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/boozy_version_2.app/boozy_version_2";
+			};
+			name = Release;
+		};
+		6E0355111EB2997B0072517C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = F869869292;
+				INFOPLIST_FILE = boozy_version_2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = boozy_version_2;
+			};
+			name = Debug;
+		};
+		6E0355121EB2997B0072517C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = F869869292;
+				INFOPLIST_FILE = boozy_version_2UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madjaba.waterreminder.boozy-version-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = boozy_version_2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6E0354B41EB2997B0072517C /* Build configuration list for PBXProject "boozy_version_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0355001EB2997B0072517C /* Debug */,
+				6E0355011EB2997B0072517C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0355021EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2 WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0355031EB2997B0072517C /* Debug */,
+				6E0355041EB2997B0072517C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0355061EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2 WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0355071EB2997B0072517C /* Debug */,
+				6E0355081EB2997B0072517C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E03550A1EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E03550B1EB2997B0072517C /* Debug */,
+				6E03550C1EB2997B0072517C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E03550D1EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E03550E1EB2997B0072517C /* Debug */,
+				6E03550F1EB2997B0072517C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E0355101EB2997B0072517C /* Build configuration list for PBXNativeTarget "boozy_version_2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E0355111EB2997B0072517C /* Debug */,
+				6E0355121EB2997B0072517C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6E0354B11EB2997B0072517C /* Project object */;
+}

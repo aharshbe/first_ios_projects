@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "boozy_version_2 WatchKit Extension/InterfaceController.swift"
+            timestampString = "515024141.294821"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "14"
+            endingLineNumber = "14"
+            landmarkName = "InterfaceController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "boozy_version_2_WatchKit_Extension.InterfaceController.mypicker.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.WKInterfacePicker&gt;"
+                  moduleName = "boozy_version_2 WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/boozy_version_2/boozy_version_2%20WatchKit%20Extension/InterfaceController.swift"
+                  timestampString = "515024245.471396"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "boozy_version_2_WatchKit_Extension.InterfaceController.mypicker.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.WKInterfacePicker&gt;"
+                  moduleName = "boozy_version_2 WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/boozy_version_2/boozy_version_2%20WatchKit%20Extension/InterfaceController.swift"
+                  timestampString = "515024245.474416"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "boozy_version_2_WatchKit_Extension.InterfaceController.init () -&gt; boozy_version_2_WatchKit_Extension.InterfaceController"
+                  moduleName = "boozy_version_2 WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/boozy_version_2/boozy_version_2%20WatchKit%20Extension/InterfaceController.swift"
+                  timestampString = "515024245.477126"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "34">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
