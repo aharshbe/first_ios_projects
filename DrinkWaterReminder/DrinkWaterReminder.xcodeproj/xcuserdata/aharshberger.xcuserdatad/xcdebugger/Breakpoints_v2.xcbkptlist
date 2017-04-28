@@ -2,4 +2,84 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DrinkWaterReminder WatchKit Extension/ComplicationController.swift"
+            timestampString = "515048872.528329"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "utilitarianImageProvider"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkWaterReminder_WatchKit_Extension.ComplicationController.utilitarianImageProvider.getter : Swift.Optional&lt;__ObjC.CLKImageProvider&gt;"
+                  moduleName = "DrinkWaterReminder WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/DrinkWaterReminder/DrinkWaterReminder%20WatchKit%20Extension/ComplicationController.swift"
+                  timestampString = "515048431.322233"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "213">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkWaterReminder_WatchKit_Extension.ComplicationController.utilitarianImageProvider.setter : Swift.Optional&lt;__ObjC.CLKImageProvider&gt;"
+                  moduleName = "DrinkWaterReminder WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/DrinkWaterReminder/DrinkWaterReminder%20WatchKit%20Extension/ComplicationController.swift"
+                  timestampString = "515048431.325812"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "76">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkWaterReminder_WatchKit_Extension.ComplicationController.(utilitarianImageProvider.getter : Swift.Optional&lt;__ObjC.CLKImageProvider&gt;).(closure #1)"
+                  moduleName = "DrinkWaterReminder WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/DrinkWaterReminder/DrinkWaterReminder%20WatchKit%20Extension/ComplicationController.swift"
+                  timestampString = "515048431.327666"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "3">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DrinkWaterReminder_WatchKit_Extension.ComplicationController.init () -&gt; DrinkWaterReminder_WatchKit_Extension.ComplicationController"
+                  moduleName = "DrinkWaterReminder WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/DrinkWaterReminder/DrinkWaterReminder%20WatchKit%20Extension/ComplicationController.swift"
+                  timestampString = "515048431.329538"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "14"
+                  endingLineNumber = "14"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

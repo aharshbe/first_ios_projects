@@ -23,6 +23,7 @@
 		6EB49B041EAC14530089DF53 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB49B031EAC14530089DF53 /* NotificationController.swift */; };
 		6EB49B061EAC14530089DF53 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB49B051EAC14530089DF53 /* ComplicationController.swift */; };
 		6EB49B081EAC14530089DF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6EB49B071EAC14530089DF53 /* Assets.xcassets */; };
+		6EFDB7071EB2FC4C006AD975 /* AppIcon27.5x27.5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6EFDB7061EB2FC4C006AD975 /* AppIcon27.5x27.5@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,9 +105,13 @@
 		6EB49AFF1EAC14530089DF53 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		6EB49B011EAC14530089DF53 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		6EB49B031EAC14530089DF53 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		6EB49B051EAC14530089DF53 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		6EB49B051EAC14530089DF53 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ComplicationController.swift; sourceTree = "<group>"; };
 		6EB49B071EAC14530089DF53 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6EB49B091EAC14530089DF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6EFDB7061EB2FC4C006AD975 /* AppIcon27.5x27.5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "AppIcon27.5x27.5@2x.png"; sourceTree = "<group>"; };
+		6EFDB7081EB2FE6E006AD975 /* DrinkWaterReminder.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DrinkWaterReminder.entitlements; sourceTree = "<group>"; };
+		6EFDB7091EB2FE7C006AD975 /* DrinkWaterReminder WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DrinkWaterReminder WatchKit App.entitlements"; sourceTree = "<group>"; };
+		6EFDB70A1EB2FEAF006AD975 /* DrinkWaterReminder WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "DrinkWaterReminder WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +173,7 @@
 		6EB49AC31EAC14520089DF53 /* DrinkWaterReminder */ = {
 			isa = PBXGroup;
 			children = (
+				6EFDB7081EB2FE6E006AD975 /* DrinkWaterReminder.entitlements */,
 				6EB49AC41EAC14520089DF53 /* AppDelegate.swift */,
 				6EB49AC61EAC14520089DF53 /* ViewController.swift */,
 				6EB49AC81EAC14520089DF53 /* Main.storyboard */,
@@ -199,6 +205,7 @@
 		6EB49AED1EAC14530089DF53 /* DrinkWaterReminder WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				6EFDB7091EB2FE7C006AD975 /* DrinkWaterReminder WatchKit App.entitlements */,
 				6EB49AEE1EAC14530089DF53 /* Interface.storyboard */,
 				6EB49AF11EAC14530089DF53 /* Assets.xcassets */,
 				6EB49AF31EAC14530089DF53 /* Info.plist */,
@@ -209,6 +216,8 @@
 		6EB49AFC1EAC14530089DF53 /* DrinkWaterReminder WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				6EFDB70A1EB2FEAF006AD975 /* DrinkWaterReminder WatchKit Extension.entitlements */,
+				6EFDB7061EB2FC4C006AD975 /* AppIcon27.5x27.5@2x.png */,
 				6EB49AFF1EAC14530089DF53 /* InterfaceController.swift */,
 				6EB49B011EAC14530089DF53 /* ExtensionDelegate.swift */,
 				6EB49B031EAC14530089DF53 /* NotificationController.swift */,
@@ -334,6 +343,11 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = F869869292;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					6EB49AD41EAC14530089DF53 = {
 						CreatedOnToolsVersion = 8.3.1;
@@ -351,11 +365,24 @@
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = F869869292;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					6EB49AF71EAC14530089DF53 = {
 						CreatedOnToolsVersion = 8.3.1;
 						DevelopmentTeam = F869869292;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -419,6 +446,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EFDB7071EB2FC4C006AD975 /* AppIcon27.5x27.5@2x.png in Resources */,
 				6EB49B081EAC14530089DF53 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -614,6 +642,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "DrinkWaterReminder WatchKit Extension/DrinkWaterReminder WatchKit Extension.entitlements";
 				DEVELOPMENT_TEAM = F869869292;
 				INFOPLIST_FILE = "DrinkWaterReminder WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -631,6 +660,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "DrinkWaterReminder WatchKit Extension/DrinkWaterReminder WatchKit Extension.entitlements";
 				DEVELOPMENT_TEAM = F869869292;
 				INFOPLIST_FILE = "DrinkWaterReminder WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -649,6 +679,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DrinkWaterReminder WatchKit App/DrinkWaterReminder WatchKit App.entitlements";
 				DEVELOPMENT_TEAM = F869869292;
 				IBSC_MODULE = DrinkWaterReminder_WatchKit_Extension;
 				INFOPLIST_FILE = "DrinkWaterReminder WatchKit App/Info.plist";
@@ -667,6 +698,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "DrinkWaterReminder WatchKit App/DrinkWaterReminder WatchKit App.entitlements";
 				DEVELOPMENT_TEAM = F869869292;
 				IBSC_MODULE = DrinkWaterReminder_WatchKit_Extension;
 				INFOPLIST_FILE = "DrinkWaterReminder WatchKit App/Info.plist";
@@ -684,6 +716,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DrinkWaterReminder/DrinkWaterReminder.entitlements;
 				DEVELOPMENT_TEAM = F869869292;
 				INFOPLIST_FILE = DrinkWaterReminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -697,6 +730,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = DrinkWaterReminder/DrinkWaterReminder.entitlements;
 				DEVELOPMENT_TEAM = F869869292;
 				INFOPLIST_FILE = DrinkWaterReminder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

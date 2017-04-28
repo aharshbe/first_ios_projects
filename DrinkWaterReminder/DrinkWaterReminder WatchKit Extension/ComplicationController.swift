@@ -10,6 +10,27 @@ import ClockKit
 
 
 class ComplicationController: NSObject, CLKComplicationDataSource {
+    lazy var utilitarianImageProvider: CLKImageProvider? = {
+        if let image = UIImage(named: "Complication/Utilitarian") {
+            
+            return CLKImageProvider(onePieceImage: image)
+            
+        }
+        else {
+            print("Cannot find image named 'Complication/Utilitarian'")
+        }
+        return nil
+    }()
+    lazy var circularImageProvider: CLKImageProvider? = {
+        if let image = UIImage(named: "Complication/Circular") {
+            return CLKImageProvider(onePieceImage: image)
+        }
+        else {
+            print("Cannot find image named 'Complication/Circular'")
+        }
+        return nil
+    }()
+    
     
     // MARK: - Timeline Configuration
     
