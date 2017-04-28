@@ -14,6 +14,9 @@
             <objects>
                 <controller animationDuration="1" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="winkie_w_WatchKit_App" customModuleProvider="target">
                     <items>
+                        <separator alignment="left" id="ONG-rG-4ak">
+                            <color key="color" red="0.71595190259999997" green="0.4628571628" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
                         <imageView width="56" height="56" alignment="center" image="Image" animationDuration="2" id="DlT-bP-N3W">
                             <gestureRecognizers>
                                 <longPressGestureRecognizer id="aZb-Zj-lyg">
@@ -23,6 +26,12 @@
                                 </longPressGestureRecognizer>
                             </gestureRecognizers>
                         </imageView>
+                        <label width="156" alignment="left" text="Hello, from Winkie! Ready to play? 👋🏼" textAlignment="center" numberOfLines="2" id="cvt-Do-MG9">
+                            <color key="textColor" red="0.71595190259999997" green="0.4628571628" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </label>
+                        <separator alignment="left" id="bwA-wJ-t1o">
+                            <color key="color" red="0.71595190259999997" green="0.4628571628" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
                         <button width="46" height="45" alignment="left" backgroundImage="plus" id="mZo-gB-Ll0">
                             <color key="backgroundColor" red="0.17522710499999999" green="0.28621888290000003" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
@@ -88,8 +97,16 @@
                                 <action selector="person2deincrementorminus" destination="AgC-eL-Hgc" id="Nid-M7-7OJ"/>
                             </connections>
                         </button>
+                        <separator alignment="left" id="xXb-ei-4xM">
+                            <color key="color" red="0.71595190259999997" green="0.4628571628" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Need help? 🙋🏼‍♂️" id="Vcc-Yc-pyP">
+                            <color key="titleColor" red="0.71595190259999997" green="0.4628571628" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="needhelp" destination="AgC-eL-Hgc" id="qtZ-d6-2Ap"/>
+                            </connections>
+                        </button>
                     </items>
-                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <connections>
                         <outlet property="person1" destination="ooL-IH-gNY" id="F94-CN-7Yk"/>
                         <outlet property="person1incrementorview" destination="aBo-72-gfK" id="MfP-51-S0X"/>
@@ -98,7 +115,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="219" y="115"/>
+            <point key="canvasLocation" x="218.82051282051285" y="114.64102564102565"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

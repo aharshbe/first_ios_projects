@@ -70,7 +70,7 @@ class InterfaceController: WKInterfaceController {
              person1.setText("🤷🏼‍♂️[long press!]")
              person1.setTextColor(UIColor.red)
         }else{
-        person1.setText(userName)
+        person1.setText(userName! + "🤷🏼‍♂️")
         
         }
           //pref 3 (person 1 name)
@@ -80,7 +80,7 @@ class InterfaceController: WKInterfaceController {
             person2.setText("💁🏼‍♂️[long press!]")
             person2.setTextColor(UIColor.red)
         }else{
-        person2.setText(userName2)
+        person2.setText(userName2! + "💁🏼‍♂️")
         }
        
     }
@@ -103,7 +103,7 @@ class InterfaceController: WKInterfaceController {
     self.presentTextInputController(withSuggestions: ["Bryan","Austin","Beatris"], allowedInputMode: WKTextInputMode.plain,
                                                        completion:{(results) -> Void in
                                                         let aResult = results?[0] as? String
-                                                        self.person1.setText(aResult)
+                                                        self.person1.setText(aResult! + "🤷🏼‍♂️")
                                                          UserDefaults.standard.set(aResult, forKey: "username")
                                                         if self.person1.isEqual(" "){
                                                             self.person1.setText("🤷🏼‍♂️[long press!]")
@@ -115,7 +115,7 @@ class InterfaceController: WKInterfaceController {
         self.presentTextInputController(withSuggestions: ["Bryan","Austin","Ugla"], allowedInputMode: WKTextInputMode.plain,
                                         completion:{(results) -> Void in
                                             let aResult = results?[0] as? String
-                                            self.person2.setText(aResult)
+                                            self.person2.setText(aResult! + "💁🏼‍♂️")
                                             UserDefaults.standard.set(aResult, forKey: "username2")
                                             if self.person2.isEqual(" "){
                                                 self.person2.setText("💁🏼‍♂️[long press!]")
@@ -192,15 +192,31 @@ class InterfaceController: WKInterfaceController {
     
     @IBAction func resetrest(_ sender: Any) {
         person1.setText("🐣[long press!]")
-        person1.setTextColor(UIColor.red)
+     
         person2.setText("🐥[long press!]")
-        person2.setTextColor(UIColor.red)
+        
         
         let h0 = { print("ok")}
         
         let action1 = WKAlertAction(title: "Thannks.🤷🏼‍♂️", style: .default, handler:h0)
         let action3 = WKAlertAction(title: "Cancel", style: .cancel) {}
         
-        presentAlert(withTitle: "Needed help? 🙋🏼‍♂️", message: "To change a player name, long press on the 🐣 or 🐥 then either draw or speak their name!💁🏼‍♂️", preferredStyle: .actionSheet, actions: [action1,action3])
+        presentAlert(withTitle: "", message: "To change a player name, long press on the 🐣 or 🐥 then either draw or speak their name!💁🏼‍♂️", preferredStyle: .actionSheet, actions: [action1,action3])
     }
+    
+    @IBAction func needhelp() {
+        person1.setText("🐣[long press!]")
+       
+        person2.setText("🐥[long press!]")
+  
+        
+        let h0 = { print("ok")}
+        
+        let action1 = WKAlertAction(title: "Thannks.🤷🏼‍♂️", style: .default, handler:h0)
+        let action3 = WKAlertAction(title: "Cancel", style: .cancel) {}
+        
+        presentAlert(withTitle: " ", message: "To change a player name, long press on the 🐣 or 🐥 then either draw or speak their name!💁🏼‍♂️", preferredStyle: .actionSheet, actions: [action1,action3])
+    }
+    
+    
 }
