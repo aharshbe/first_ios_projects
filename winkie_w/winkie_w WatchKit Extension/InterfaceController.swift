@@ -27,6 +27,8 @@ class InterfaceController: WKInterfaceController {
         
         
         
+
+        
         //pref 1 (incrementor incrementor person 1)
         let preferences = UserDefaults.standard
         let currentLevelKey = "currentLevel"
@@ -53,24 +55,42 @@ class InterfaceController: WKInterfaceController {
         }
         //pref 3 (person 1 name)
         
+        if preferences.object(forKey: currentLevelKey) == nil {
+            //  Doesn't exist
+        } else {
+            let currentLevel = preferences.integer(forKey: currentLevelKey)
+            let strIn1sharedprefs = String(currentLevel)
+            person1incrementorview.setText(strIn1sharedprefs)
+            incrementor1 = currentLevel
+        }
+        
         let userName = UserDefaults.standard.string(forKey: "username")
+        
+        if UserDefaults.standard.string(forKey: "username") == nil {
+             person1.setText("🤷🏼‍♂️[long press!]")
+             person1.setTextColor(UIColor.red)
+        }else{
         person1.setText(userName)
-        if person1.isEqual("") || person1.isEqual(" "){
-            person1.setText("Person 1")
+        
         }
           //pref 3 (person 1 name)
         let userName2 = UserDefaults.standard.string(forKey: "username2")
+        
+        if UserDefaults.standard.string(forKey: "username2") == nil {
+            person2.setText("💁🏼‍♂️[long press!]")
+            person2.setTextColor(UIColor.red)
+        }else{
         person2.setText(userName2)
-        if person2.isEqual("") || person2.isEqual(" "){
-            person2.setText("Person 2")
         }
-
-
+       
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
+        
+        
+
     }
     
     override func didDeactivate() {
@@ -85,6 +105,9 @@ class InterfaceController: WKInterfaceController {
                                                         let aResult = results?[0] as? String
                                                         self.person1.setText(aResult)
                                                          UserDefaults.standard.set(aResult, forKey: "username")
+                                                        if self.person1.isEqual(" "){
+                                                            self.person1.setText("🤷🏼‍♂️[long press!]")
+                                                        }
         })
     }
     
@@ -94,6 +117,9 @@ class InterfaceController: WKInterfaceController {
                                             let aResult = results?[0] as? String
                                             self.person2.setText(aResult)
                                             UserDefaults.standard.set(aResult, forKey: "username2")
+                                            if self.person2.isEqual(" "){
+                                                self.person2.setText("💁🏼‍♂️[long press!]")
+                                            }
         })
     }
     
@@ -165,7 +191,16 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func resetrest(_ sender: Any) {
-        person1.setText("Person 1")
-        person2.setText("Person 2")
+        person1.setText("🐣[long press!]")
+        person1.setTextColor(UIColor.red)
+        person2.setText("🐥[long press!]")
+        person2.setTextColor(UIColor.red)
+        
+        let h0 = { print("ok")}
+        
+        let action1 = WKAlertAction(title: "Thannks.🤷🏼‍♂️", style: .default, handler:h0)
+        let action3 = WKAlertAction(title: "Cancel", style: .cancel) {}
+        
+        presentAlert(withTitle: "Needed help? 🙋🏼‍♂️", message: "To change a player name, long press on the 🐣 or 🐥 then either draw or speak their name!💁🏼‍♂️", preferredStyle: .actionSheet, actions: [action1,action3])
     }
 }
