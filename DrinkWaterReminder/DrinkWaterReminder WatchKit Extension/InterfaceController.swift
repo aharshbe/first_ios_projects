@@ -16,6 +16,7 @@ class InterfaceController: WKInterfaceController {
     var incrementorwater = 0
     var totalnumberofdrinksincrementor = 0
     
+    @IBOutlet var drinkh20title: WKInterfaceLabel!
     
     @IBOutlet var numberofdrinks: WKInterfaceLabel!
 
@@ -30,7 +31,7 @@ class InterfaceController: WKInterfaceController {
         // Configure interface objects here.
         
         
-        
+     
       
 
         
@@ -174,10 +175,12 @@ class InterfaceController: WKInterfaceController {
         presentAlert(withTitle: "Your Summary:", message: "You've had \(incrementordrinks) 🍹 Make sure to drink \(incrementorwater) gulps of water💧" + "Total number of drinks over lifetime is \(totalnumberofdrinksincrementor)!", preferredStyle: .sideBySideButtonsAlert, actions: [action1, action2])
         
     }
+
+}
     
         
-    }
     
+
 
     
 

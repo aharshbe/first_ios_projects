@@ -65,6 +65,7 @@
                         </button>
                     </items>
                     <connections>
+                        <outlet property="drinkh20title" destination="x5J-27-vES" id="doO-rn-HsG"/>
                         <outlet property="numberofdrinks" destination="IDz-Zl-Avs" id="gj8-3K-WGg"/>
                         <outlet property="numberofwaterleft" destination="fGX-ni-Gcn" id="ib2-ZH-hMU"/>
                     </connections>

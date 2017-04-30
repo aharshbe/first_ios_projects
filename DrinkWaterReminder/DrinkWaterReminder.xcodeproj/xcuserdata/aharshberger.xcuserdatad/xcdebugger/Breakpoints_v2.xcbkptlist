@@ -88,11 +88,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DrinkWaterReminder WatchKit Extension/InterfaceController.swift"
-            timestampString = "515282773.85238"
+            timestampString = "515285736.152349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "180"
-            endingLineNumber = "180">
+            startingLineNumber = "183"
+            endingLineNumber = "183">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -102,11 +102,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DrinkWaterReminder WatchKit Extension/InterfaceController.swift"
-            timestampString = "515282773.85238"
+            timestampString = "515285736.152349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "167"
-            endingLineNumber = "167"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "InterfaceController"
             landmarkType = "3">
          </BreakpointContent>
@@ -118,11 +118,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DrinkWaterReminder WatchKit Extension/InterfaceController.swift"
-            timestampString = "515282773.85238"
+            timestampString = "515285736.152349"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "clickingReset()"
             landmarkType = "7">
          </BreakpointContent>
