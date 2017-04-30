@@ -169,9 +169,9 @@ class InterfaceController: WKInterfaceController {
 
     @IBAction func summaryButton() {
         let h0 = {}
-        let action1 = WKAlertAction(title: "Okay, 👌🏼", style: .default, handler:h0)
-        let action2 = WKAlertAction(title: "Share.", style: .default, handler:h0)
-        presentAlert(withTitle: "", message: "You've had \(incrementordrinks) 🍹. Make sure to drink \(incrementorwater) gulps of water💧." + "Total number of drinks over lifetime is: \(totalnumberofdrinksincrementor).", preferredStyle: .sideBySideButtonsAlert, actions: [action1, action2])
+        let action1 = WKAlertAction(title: "Okay👌🏼", style: .default, handler:h0)
+        let action2 = WKAlertAction(title: "Share💞", style: .default, handler:h0)
+        presentAlert(withTitle: "Your Summary:", message: "You've had \(incrementordrinks) 🍹 Make sure to drink \(incrementorwater) gulps of water💧" + "Total number of drinks over lifetime is \(totalnumberofdrinksincrementor)!", preferredStyle: .sideBySideButtonsAlert, actions: [action1, action2])
         
     }
     
