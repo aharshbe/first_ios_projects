@@ -14,8 +14,13 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="DrinkWaterReminder_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="136" alignment="left" text="Welcome to Boozy! 👋🏼" textAlignment="left" numberOfLines="8" id="rSf-yu-Dkj"/>
-                        <separator alignment="left" id="h3M-xa-Dxh">
+                        <button width="120" alignment="center" title="View Summary " id="IqO-aI-Uku">
+                            <color key="backgroundColor" red="0.43877930650000002" green="0.95261120799999999" blue="0.41579435069999998" alpha="0.37483494719999999" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="summaryButton" destination="AgC-eL-Hgc" id="Jgb-3D-jdw"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="9W7-2b-qRv">
                             <color key="color" red="1" green="0.25533974189999997" blue="0.33707876240000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </separator>
                         <imageView width="45" height="48" alignment="left" image="Drink" id="qM6-NZ-pmi">
@@ -45,12 +50,6 @@
                         <separator alignment="left" id="6yR-0r-iZv">
                             <color key="color" red="0.48560634689999999" green="0.6242473503" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </separator>
-                        <label alignment="left" text="⚠️Remember to eat too, we dont' want a handover do we!😁" numberOfLines="4" id="o1M-V8-7ph"/>
-                        <separator alignment="left" id="7Yo-82-WwP">
-                            <color key="color" red="1" green="0.43785649869999999" blue="0.71330893159999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </separator>
-                        <label width="136" height="48" alignment="left" text="Total # of drinks over lifetime 🍻" numberOfLines="2" id="cOs-19-m0q"/>
-                        <label alignment="center" text="0" textAlignment="center" id="mQy-zf-f4J"/>
                         <button width="65" alignment="center" verticalAlignment="center" title="Reset" id="Iom-GS-VIX">
                             <gestureRecognizers>
                                 <longPressGestureRecognizer id="QiQ-yp-6tb">
@@ -59,22 +58,19 @@
                                     </connections>
                                 </longPressGestureRecognizer>
                             </gestureRecognizers>
+                            <color key="backgroundColor" red="1" green="0.078526610410000003" blue="0.097256707009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="clickingReset" destination="AgC-eL-Hgc" id="6ea-ax-WDd"/>
                             </connections>
                         </button>
-                        <separator alignment="left" id="rcM-eu-hE5">
-                            <color key="color" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                        </separator>
                     </items>
                     <connections>
                         <outlet property="numberofdrinks" destination="IDz-Zl-Avs" id="gj8-3K-WGg"/>
                         <outlet property="numberofwaterleft" destination="fGX-ni-Gcn" id="ib2-ZH-hMU"/>
-                        <outlet property="totalnumberofdrinks" destination="mQy-zf-f4J" id="NkA-q6-6hB"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="208" y="139"/>
+            <point key="canvasLocation" x="208" y="138.5"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

@@ -35,7 +35,7 @@ class InterfaceController: WKInterfaceController {
 
         
         
-        //pref 1 (incrementor incrementor person 1)
+        //pref 1 (incrementor incrementor drinks )
         let preferences = UserDefaults.standard
         let currentLevelKey = "currentLevel"
         if preferences.object(forKey: currentLevelKey) == nil {
@@ -46,7 +46,7 @@ class InterfaceController: WKInterfaceController {
             numberofwaterleft.setText(strIn1sharedprefs)
             incrementorwater = currentLevel
         }
-        //pref 2 (incrementor person 2)
+        //pref 2 (incrementor for water)
         let preferences2 = UserDefaults.standard
         let currentLevelKey2 = "currentLevel2"
         if preferences2.object(forKey: currentLevelKey2) == nil {
@@ -59,16 +59,14 @@ class InterfaceController: WKInterfaceController {
             
             
         }
-        //pref 2 (incrementor person 2)
+        //pref 3 (incrementor for total drinks)
         let preferences3 = UserDefaults.standard
         let currentLevelKey3 = "currentLevel3"
         if preferences3.object(forKey: currentLevelKey3) == nil {
             //  Doesn't exist
         } else {
             let currentLevel3 = preferences3.integer(forKey: currentLevelKey3)
-            let strIn3sharedprefs = String(currentLevel3)
-            totalnumberofdrinks.setText(strIn3sharedprefs)
-            incrementordrinks = currentLevel3
+            totalnumberofdrinksincrementor = currentLevel3
             
             
         }
@@ -92,11 +90,8 @@ class InterfaceController: WKInterfaceController {
         
         let incrementorwaterstring = String(incrementorwater)
         let anddrinks = String(incrementordrinks)
-        let totalnumnberofdrinksvar = String(totalnumberofdrinksincrementor)
         numberofdrinks.setText(anddrinks)
         numberofwaterleft.setText(incrementorwaterstring)
-        totalnumberofdrinks.setText(totalnumnberofdrinksvar)
-        
         let preferences = UserDefaults.standard
         let currentLevel = incrementorwater
         let currentLevelKey = "currentLevel"
@@ -133,38 +128,52 @@ class InterfaceController: WKInterfaceController {
 
     
     @IBAction func clickingReset() {
-        incrementorwater = 0
-        incrementordrinks = 0
         
-        let incrementorwaterstring = String(incrementorwater)
-        numberofwaterleft.setText(incrementorwaterstring)
+        let h0 = {
+            
+            
+            self.incrementorwater = 0
+            self.incrementordrinks = 0
+            
+            let incrementorwaterstring = String(self.incrementorwater)
+            self.numberofwaterleft.setText(incrementorwaterstring)
+            
+            let anddrinks = String(self.incrementordrinks)
+            self.numberofdrinks.setText(anddrinks)
+            
+            
+            let preferences = UserDefaults.standard
+            let currentLevel = self.incrementorwater
+            let currentLevelKey = "currentLevel"
+            preferences.set(currentLevel, forKey: currentLevelKey)
+            preferences.synchronize()
+            
+            let preferences2 = UserDefaults.standard
+            let currentLevel2 = self.incrementordrinks
+            let currentLevelKey2 = "currentLevel2"
+            preferences2.set(currentLevel2, forKey: currentLevelKey2)
+            preferences2.synchronize()
         
-        let anddrinks = String(incrementordrinks)
-        numberofdrinks.setText(anddrinks)
+        }
         
-        
-        let preferences = UserDefaults.standard
-        let currentLevel = incrementorwater
-        let currentLevelKey = "currentLevel"
-        preferences.set(currentLevel, forKey: currentLevelKey)
-        preferences.synchronize()
-        
-        let preferences2 = UserDefaults.standard
-        let currentLevel2 = incrementordrinks
-        let currentLevelKey2 = "currentLevel2"
-        preferences2.set(currentLevel2, forKey: currentLevelKey2)
-        preferences2.synchronize()
-        
-        let h0 = {self.totalnumberofdrinks.setText("this")}
-        
-        let action1 = WKAlertAction(title: "Thanks", style: .default, handler:h0)
+        let action1 = WKAlertAction(title: "Okay, 👌🏼", style: .default, handler:h0)
+        let action2 = WKAlertAction(title: "No thanks.", style: .destructive){}
        
         
-        presentAlert(withTitle: "Voila...", message: "Drinks reset 👌🏼", preferredStyle: .actionSheet, actions: [action1])
+        presentAlert(withTitle: "Hello, 💁🏼‍♂️", message: "Are you sure you'd like to reset drinks?", preferredStyle: .alert, actions: [action1, action2])
         
         
     }
+    
+    
 
+    @IBAction func summaryButton() {
+        let h0 = {}
+        let action1 = WKAlertAction(title: "Okay, 👌🏼", style: .default, handler:h0)
+        let action2 = WKAlertAction(title: "Share.", style: .default, handler:h0)
+        presentAlert(withTitle: "", message: "You've had \(incrementordrinks) 🍹. Make sure to drink \(incrementorwater) gulps of water💧." + "Total number of drinks over lifetime is: \(totalnumberofdrinksincrementor).", preferredStyle: .sideBySideButtonsAlert, actions: [action1, action2])
+        
+    }
     
         
     }
