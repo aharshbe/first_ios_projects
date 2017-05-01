@@ -29,10 +29,7 @@ class InterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        
-        
-     
-      
+    
 
         
         
@@ -165,9 +162,9 @@ class InterfaceController: WKInterfaceController {
         
         
     }
-    
-    
+  
 
+    
     @IBAction func summaryButton() {
         let h0 = {}
         let action1 = WKAlertAction(title: "Okay👌🏼", style: .default, handler:h0)
@@ -175,8 +172,41 @@ class InterfaceController: WKInterfaceController {
         presentAlert(withTitle: "Your Summary:", message: "You've had \(incrementordrinks) 🍹 Make sure to drink \(incrementorwater) gulps of water💧" + "Total number of drinks over lifetime is \(totalnumberofdrinksincrementor)!", preferredStyle: .sideBySideButtonsAlert, actions: [action1, action2])
         
     }
+    
+    
+    @IBAction func clickingresetoveral() {
+        
+        
+        
+        
+        let action1 = WKAlertAction(title: "Thanks", style: .default){}
+        
+        
+        presentAlert(withTitle: "Hello, 💁🏼‍♂️", message: "To reset lifetime drinks cout, long press this [ℹ️] icon.", preferredStyle: .alert, actions: [action1])
+        
+    }
+    
+    @IBAction func longpressresetdrinkscount(_ sender: Any) {
+        
+        
+        self.totalnumberofdrinksincrementor = 0
+        let preferences3 = UserDefaults.standard
+        let currentLevel3 = self.totalnumberofdrinksincrementor
+        let currentLevelKey3 = "currentLevel3"
+        preferences3.set(currentLevel3, forKey: currentLevelKey3)
+        preferences3.synchronize()
+        
+        let action1 = WKAlertAction(title: "cool", style: .default){}
+        
+        
+        presentAlert(withTitle: "ℹ️", message: "Lifetime drinks reset!", preferredStyle: .alert, actions: [action1])
 
+    }
+    
+    
 }
+
+
     
         
     

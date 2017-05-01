@@ -37,6 +37,9 @@
                         <separator alignment="left" id="idv-8F-I29">
                             <color key="color" red="0.94673549107142863" green="0.28621888290000003" blue="0.95261120799999999" alpha="0.33486465669999999" colorSpace="custom" customColorSpace="displayP3"/>
                         </separator>
+                        <separator alignment="left" id="CFn-tV-IrZ">
+                            <color key="color" red="0.94673549109999999" green="0.28621888290000003" blue="0.95261120799999999" alpha="0.33486465669999999" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
                         <imageView width="46" height="42" alignment="left" image="Water" id="cJu-PZ-OIf"/>
                         <label width="118" alignment="center" text="Drink H20" textAlignment="center" id="x5J-27-vES"/>
                         <label alignment="center" text="0" textAlignment="center" id="fGX-ni-Gcn"/>
@@ -47,22 +50,27 @@
                                 <action selector="ihadwaterclick" destination="AgC-eL-Hgc" id="zLx-aR-Yar"/>
                             </connections>
                         </button>
-                        <separator alignment="left" id="6yR-0r-iZv">
-                            <color key="color" red="0.48560634689999999" green="0.6242473503" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </separator>
                         <button width="65" alignment="center" verticalAlignment="center" title="Reset" id="Iom-GS-VIX">
-                            <gestureRecognizers>
-                                <longPressGestureRecognizer id="QiQ-yp-6tb">
-                                    <connections>
-                                        <action selector="longPressReset:" destination="AgC-eL-Hgc" id="puB-Nr-Ou3"/>
-                                    </connections>
-                                </longPressGestureRecognizer>
-                            </gestureRecognizers>
                             <color key="backgroundColor" red="1" green="0.078526610410000003" blue="0.097256707009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="clickingReset" destination="AgC-eL-Hgc" id="6ea-ax-WDd"/>
                             </connections>
                         </button>
+                        <button width="38" height="27" alignment="right" verticalAlignment="center" title="ℹ️" id="73V-ie-dwA">
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer id="hwt-kY-l33">
+                                    <connections>
+                                        <action selector="longpressresetdrinkscount:" destination="AgC-eL-Hgc" id="TmQ-bm-sRi"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
+                            <connections>
+                                <action selector="clickingresetoveral" destination="AgC-eL-Hgc" id="S1b-N9-gVa"/>
+                            </connections>
+                        </button>
+                        <separator alignment="left" id="6yR-0r-iZv">
+                            <color key="color" red="0.48560634689999999" green="0.6242473503" blue="0.95261120799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </separator>
                     </items>
                     <connections>
                         <outlet property="drinkh20title" destination="x5J-27-vES" id="doO-rn-HsG"/>
@@ -71,7 +79,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="208" y="138.5"/>
+            <point key="canvasLocation" x="208" y="131"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
