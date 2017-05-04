@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "winkie_w_complication WatchKit Extension/InterfaceController.swift"
-            timestampString = "515569467.665359"
+            timestampString = "515616535.881256"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
+            startingLineNumber = "263"
+            endingLineNumber = "263"
             landmarkName = "viewsummary()"
             landmarkType = "7">
          </BreakpointContent>

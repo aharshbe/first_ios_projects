@@ -15,6 +15,13 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="winkie_w_complication_WatchKit_App" customModuleProvider="target">
                     <items>
                         <button width="1" alignment="left" title="View Summary" id="CXo-GF-AB6">
+                            <gestureRecognizers>
+                                <longPressGestureRecognizer id="I1J-O4-Uws">
+                                    <connections>
+                                        <action selector="longpresssummary:" destination="AgC-eL-Hgc" id="5n4-me-7Mj"/>
+                                    </connections>
+                                </longPressGestureRecognizer>
+                            </gestureRecognizers>
                             <connections>
                                 <action selector="viewsummary" destination="AgC-eL-Hgc" id="bae-Rb-7vJ"/>
                             </connections>

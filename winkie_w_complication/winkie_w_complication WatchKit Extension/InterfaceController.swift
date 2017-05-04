@@ -243,9 +243,46 @@ class InterfaceController: WKInterfaceController {
         let currentLevelKey2 = "currentLevel2"
         let person2incre = preferences2.integer(forKey: currentLevelKey2)
         
+        var phrase = " "
+        
+        if person1incre > person2incre {
+            
+             phrase = "\(usernameperson1) is winning! 💋"
+        
+        } else if person2incre > person1incre {
+            
+            phrase = "\(usernameperson2) is winning! 🤙🏼"
+        
+        }else if person1incre == person2incre {
+            
+            phrase = "\(usernameperson1) & \(usernameperson2) are tied! 👥"
+        
+        }
+        
+        
+        presentAlert(withTitle: "👱🏼\(usernameperson1) vs. 👨🏽\(usernameperson2)", message: "\(phrase)", preferredStyle: .actionSheet, actions: [action1])
+    }
+
+    @IBAction func longpresssummary(_ sender: Any) {
+        let h0 = { print("ok")}
+        
+        let action1 = WKAlertAction(title: "Thannks.🤷🏼‍♂️", style: .default, handler:h0)
+        
+        let userName = UserDefaults.standard.string(forKey: "username")
+        let usernameperson1 = userName!
+        let userName2 = UserDefaults.standard.string(forKey: "username2")
+        let usernameperson2 = userName2!
+        
+        let preferences = UserDefaults.standard
+        let currentLevelKey = "currentLevel"
+        let person1incre = preferences.integer(forKey: currentLevelKey)
+        
+        let preferences2 = UserDefaults.standard
+        let currentLevelKey2 = "currentLevel2"
+        let person2incre = preferences2.integer(forKey: currentLevelKey2)
+        
         
         presentAlert(withTitle: "👱🏼\(usernameperson1) vs. 👨🏽\(usernameperson2)", message: "\(usernameperson1) has \(person1incre) winks and \(usernameperson2) has \(person2incre) winks!", preferredStyle: .actionSheet, actions: [action1])
     }
-
 
 }
