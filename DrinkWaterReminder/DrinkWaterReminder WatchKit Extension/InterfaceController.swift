@@ -196,7 +196,7 @@ class InterfaceController: WKInterfaceController {
         preferences3.set(currentLevel3, forKey: currentLevelKey3)
         preferences3.synchronize()
         
-        let action1 = WKAlertAction(title: "cool", style: .default){}
+        let action1 = WKAlertAction(title: "Thank you.", style: .default){}
         
         
         presentAlert(withTitle: "ℹ️", message: "Lifetime drinks reset!", preferredStyle: .alert, actions: [action1])
