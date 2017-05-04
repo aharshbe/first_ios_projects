@@ -48,12 +48,6 @@
                             </connections>
                         </button>
                         <button width="65" alignment="center" verticalAlignment="center" title="Reset" id="Iom-GS-VIX">
-                            <color key="backgroundColor" red="1" green="0.078526610410000003" blue="0.097256707009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            <connections>
-                                <action selector="clickingReset" destination="AgC-eL-Hgc" id="6ea-ax-WDd"/>
-                            </connections>
-                        </button>
-                        <button width="98" height="27" alignment="center" verticalAlignment="center" title="ℹ️" id="73V-ie-dwA">
                             <gestureRecognizers>
                                 <longPressGestureRecognizer id="hwt-kY-l33">
                                     <connections>
@@ -61,8 +55,9 @@
                                     </connections>
                                 </longPressGestureRecognizer>
                             </gestureRecognizers>
+                            <color key="backgroundColor" red="1" green="0.078526610410000003" blue="0.097256707009999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
-                                <action selector="clickingresetoveral" destination="AgC-eL-Hgc" id="S1b-N9-gVa"/>
+                                <action selector="clickingReset" destination="AgC-eL-Hgc" id="6ea-ax-WDd"/>
                             </connections>
                         </button>
                         <separator alignment="left" id="6yR-0r-iZv">

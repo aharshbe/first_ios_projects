@@ -174,17 +174,17 @@ class InterfaceController: WKInterfaceController {
     }
     
     
-    @IBAction func clickingresetoveral() {
-        
-        
-        
-        
-        let action1 = WKAlertAction(title: "Thanks", style: .default){}
-        
-        
-        presentAlert(withTitle: "Hello, 💁🏼‍♂️", message: "To reset lifetime drinks cout, long press this [ℹ️] icon.", preferredStyle: .alert, actions: [action1])
-        
-    }
+//    @IBAction func clickingresetoveral() {
+//        
+//        
+//        
+//        
+//        let action1 = WKAlertAction(title: "Thanks", style: .default){}
+//        
+//        
+//        presentAlert(withTitle: "Hello, 💁🏼‍♂️", message: "To reset lifetime drinks cout, long press this [ℹ️] icon.", preferredStyle: .alert, actions: [action1])
+//        
+//    }
     
     @IBAction func longpressresetdrinkscount(_ sender: Any) {
         
