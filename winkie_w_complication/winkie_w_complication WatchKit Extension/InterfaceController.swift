@@ -247,11 +247,11 @@ class InterfaceController: WKInterfaceController {
         
         if person1incre > person2incre {
             
-             phrase = "\(usernameperson1) is winning! 💋"
+             phrase = "\(usernameperson1) is winning! 💋" + " " + "\(usernameperson2), you better catch up!"
         
         } else if person2incre > person1incre {
             
-            phrase = "\(usernameperson2) is winning! 🤙🏼"
+            phrase = "\(usernameperson2) is winning! 🤙🏼" + " " + "\(usernameperson1), you better catch up!"
         
         }else if person1incre == person2incre {
             
