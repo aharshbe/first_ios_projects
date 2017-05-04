@@ -2,4 +2,69 @@
 <Bucket
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "winkie_w WatchKit Extension/InterfaceController.swift"
+            timestampString = "515565678.251831"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "InterfaceController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "winkie_w_WatchKit_Extension.InterfaceController.person1incrementorview.getter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.WKInterfaceLabel&gt;"
+                  moduleName = "winkie_w WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/winkie_w/winkie_w%20WatchKit%20Extension/InterfaceController.swift"
+                  timestampString = "515566332.435866"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "48">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "winkie_w_WatchKit_Extension.InterfaceController.person1incrementorview.setter : Swift.ImplicitlyUnwrappedOptional&lt;__ObjC.WKInterfaceLabel&gt;"
+                  moduleName = "winkie_w WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/winkie_w/winkie_w%20WatchKit%20Extension/InterfaceController.swift"
+                  timestampString = "515566332.438458"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "winkie_w_WatchKit_Extension.InterfaceController.init () -&gt; winkie_w_WatchKit_Extension.InterfaceController"
+                  moduleName = "winkie_w WatchKit Extension"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/aharshberger/Documents/Xcode%20Projects/winkie_w/winkie_w%20WatchKit%20Extension/InterfaceController.swift"
+                  timestampString = "515566332.440401"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "156">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -37,9 +37,6 @@
                         <separator alignment="left" id="idv-8F-I29">
                             <color key="color" red="0.94673549107142863" green="0.28621888290000003" blue="0.95261120799999999" alpha="0.33486465669999999" colorSpace="custom" customColorSpace="displayP3"/>
                         </separator>
-                        <separator alignment="left" id="CFn-tV-IrZ">
-                            <color key="color" red="0.94673549109999999" green="0.28621888290000003" blue="0.95261120799999999" alpha="0.33486465669999999" colorSpace="custom" customColorSpace="displayP3"/>
-                        </separator>
                         <imageView width="46" height="42" alignment="left" image="Water" id="cJu-PZ-OIf"/>
                         <label width="118" alignment="center" text="Drink H20" textAlignment="center" id="x5J-27-vES"/>
                         <label alignment="center" text="0" textAlignment="center" id="fGX-ni-Gcn"/>
@@ -56,7 +53,7 @@
                                 <action selector="clickingReset" destination="AgC-eL-Hgc" id="6ea-ax-WDd"/>
                             </connections>
                         </button>
-                        <button width="38" height="27" alignment="right" verticalAlignment="center" title="ℹ️" id="73V-ie-dwA">
+                        <button width="98" height="27" alignment="center" verticalAlignment="center" title="ℹ️" id="73V-ie-dwA">
                             <gestureRecognizers>
                                 <longPressGestureRecognizer id="hwt-kY-l33">
                                     <connections>
@@ -79,7 +76,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="208" y="131"/>
+            <point key="canvasLocation" x="207.4871794871795" y="130.76923076923077"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
