@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "CFC9D452C1424819EDC6576970F1E2424696897E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "CFC9D452C1424819EDC6576970F1E2424696897E" : 9223372036854775807,
+    "38C9A149DB9B4C60AB6E84D118CAEE63A47BC346" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "B54311DD-A544-48FE-889E-A6F5DEB50A3C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "CFC9D452C1424819EDC6576970F1E2424696897E" : "DrinkWaterReminder\/",
+    "38C9A149DB9B4C60AB6E84D118CAEE63A47BC346" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DrinkWaterReminder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DrinkWaterReminder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aharshbe\/first_ios_projects.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "38C9A149DB9B4C60AB6E84D118CAEE63A47BC346"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/aharshbe\/boozy_watch_app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CFC9D452C1424819EDC6576970F1E2424696897E"
+    }
+  ]
+}
