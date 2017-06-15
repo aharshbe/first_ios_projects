@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E25F64F1EF206400007B282 /* shuffle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E25F64E1EF206400007B282 /* shuffle.swift */; };
 		6EBFA4651EF1B3F700DFF970 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBFA4641EF1B3F700DFF970 /* AppDelegate.swift */; };
 		6EBFA4671EF1B3F700DFF970 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EBFA4661EF1B3F700DFF970 /* ViewController.swift */; };
 		6EBFA46A1EF1B3F700DFF970 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6EBFA4681EF1B3F700DFF970 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6E25F64E1EF206400007B282 /* shuffle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shuffle.swift; sourceTree = "<group>"; };
 		6EBFA4611EF1B3F700DFF970 /* questionsgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = questionsgame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EBFA4641EF1B3F700DFF970 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6EBFA4661EF1B3F700DFF970 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		6EBFA4581EF1B3F700DFF970 = {
 			isa = PBXGroup;
 			children = (
+				6E25F64E1EF206400007B282 /* shuffle.swift */,
 				6EBFA4631EF1B3F700DFF970 /* questionsgame */,
 				6EBFA4781EF1B3F700DFF970 /* questionsgameTests */,
 				6EBFA4831EF1B3F700DFF970 /* questionsgameUITests */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EBFA4671EF1B3F700DFF970 /* ViewController.swift in Sources */,
+				6E25F64F1EF206400007B282 /* shuffle.swift in Sources */,
 				6EBFA4651EF1B3F700DFF970 /* AppDelegate.swift in Sources */,
 				6EBFA4931EF1B76D00DFF970 /* ViewController2.swift in Sources */,
 			);
@@ -520,6 +524,7 @@
 				6EBFA48B1EF1B3F700DFF970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EBFA48C1EF1B3F700DFF970 /* Build configuration list for PBXNativeTarget "questionsgameTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +533,7 @@
 				6EBFA48E1EF1B3F700DFF970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6EBFA48F1EF1B3F700DFF970 /* Build configuration list for PBXNativeTarget "questionsgameUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +542,7 @@
 				6EBFA4911EF1B3F700DFF970 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

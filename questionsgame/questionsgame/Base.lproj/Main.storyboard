@@ -58,7 +58,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questions Game 🔮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qAx-kl-ixr">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Questions Game 💡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qAx-kl-ixr">
                                 <rect key="frame" x="117" y="86" width="155" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -103,12 +103,21 @@
                                     <action selector="teachquestionbutton:" destination="4Yi-tO-ZEw" eventType="touchUpInside" id="wQv-ZO-Y3C"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="827-lc-cFp">
+                                <rect key="frame" x="142" y="286" width="44" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Image"/>
+                                <connections>
+                                    <action selector="shuffleQuestions:" destination="4Yi-tO-ZEw" eventType="touchUpInside" id="rQS-h3-1BM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="answerDisplay" destination="Wz4-hN-E1V" id="kdA-bI-ciD"/>
                         <outlet property="answerInput" destination="uO6-MJ-SEE" id="5Kj-z0-XCT"/>
+                        <outlet property="buttonshuffle" destination="827-lc-cFp" id="oA3-Ka-Vph"/>
                         <outlet property="clickingxbutton" destination="H82-P7-2q9" id="z9X-AT-lxV"/>
                         <outlet property="imageview" destination="0fD-i9-RNq" id="fTV-sS-k34"/>
                         <outlet property="prevanswerlabel" destination="Wz4-hN-E1V" id="dNL-5F-B93"/>
@@ -169,4 +178,7 @@
             <point key="canvasLocation" x="-180" y="20.239880059970016"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Image" width="512" height="512"/>
+    </resources>
 </document>

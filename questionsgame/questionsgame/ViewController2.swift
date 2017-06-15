@@ -35,6 +35,8 @@ class ViewController2: UIViewController {
     
     @IBOutlet weak var prevanswerlabel: UITextView!
     
+    @IBOutlet weak var buttonshuffle: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -56,6 +58,8 @@ class ViewController2: UIViewController {
         
         self.prevlabel.isHidden = true;
         self.answerDisplay.isHidden = true;
+        
+       
     }
     
     override func didReceiveMemoryWarning() {
@@ -138,5 +142,15 @@ class ViewController2: UIViewController {
         }
         
     }
+    
+    @IBAction func shuffleQuestions(_ sender: Any) {
+        
+        
+        questionsStore.shuffle()
+        
+       
+    }
+    
+    
     
 }
